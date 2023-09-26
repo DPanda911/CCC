@@ -39,6 +39,8 @@ public class PlayerMove : MonoBehaviour
     void Start()
     {
 
+        Application.targetFrameRate = 60;
+
         //Gets the rigidbody
         rb = GetComponent<Rigidbody>();
 
@@ -81,7 +83,7 @@ public class PlayerMove : MonoBehaviour
         horizontalInput = Input.GetAxisRaw("Horizontal");
         verticalInput = Input.GetAxisRaw("Vertical");
 
-        if(Input.GetKey(jumpKey) && readyToJump && grounded)
+        if(Input.GetKeyDown(jumpKey) && readyToJump && grounded)
         {
             readyToJump = false;
 
