@@ -100,6 +100,9 @@ MonoBehaviour:
   sensX: 150
   sensY: 150
   orientation: {fileID: 5487180590145866719}
+  playerTransform: {fileID: 5487180591593819362}
+  delay: 0.1
+  maxYLook: 90
 --- !u!1 &5487180590145866716
 GameObject:
   m_ObjectHideFlags: 0

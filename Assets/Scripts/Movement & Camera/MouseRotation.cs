@@ -8,9 +8,10 @@ public class MouseRotation : MonoBehaviour
     public float sensY;
 
     public Transform orientation;
+    public Transform playerTransform;
 
     float xRotation;
-    float yRotation;
+    float yRotation = 0;
 
     public float delay = 0.1f;
     [Range(0.0f, 90.0f)]public float maxYLook = 90f;
@@ -24,6 +25,8 @@ public class MouseRotation : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
 
         startTime = Time.time;
+
+        yRotation = playerTransform.eulerAngles.y * 0f;
     }
 
     // Update is called once per frame
@@ -41,11 +44,11 @@ public class MouseRotation : MonoBehaviour
             xRotation -= mouseY;
 
             xRotation = Mathf.Clamp(xRotation, -maxYLook, maxYLook);
-            transform.rotation = Quaternion.Euler(xRotation, yRotation, 0);
-            orientation.rotation = Quaternion.Euler(0, yRotation, 0);
+            transform.localRotation = Quaternion.Euler(xRotation, yRotation, 0);
+            orientation.localRotation = Quaternion.Euler(0, yRotation, 0);
         } else {
+            yRotation = playerTransform.eulerAngles.y * 0f;
             xRotation = 0;
-            yRotation = 0;
         }
 
     }
