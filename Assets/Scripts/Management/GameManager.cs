@@ -12,8 +12,6 @@ public class GameManager : MonoBehaviour
         if (instance == null)
         {
             instance = this;
-
-            instance.sinnedLevels = new bool[] { false, false, false, false, false, false, false };
         }
         else if (instance != this)
         {
