@@ -17,7 +17,7 @@ RenderSettings:
   m_Fog: 1
   m_FogColor: {r: 0.9333334, g: 1, b: 1, a: 1}
   m_FogMode: 3
-  m_FogDensity: 0.02
+  m_FogDensity: 0.04
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
   m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
@@ -891,6 +891,63 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2
+--- !u!1001 &1746906993003091220
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4874769628769274146, guid: 794ab45a7023ef84998697f84ead645c, type: 3}
+      propertyPath: m_Name
+      value: Renderer
+      objectReference: {fileID: 0}
+    - target: {fileID: 9217624893764564120, guid: 794ab45a7023ef84998697f84ead645c, type: 3}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 9217624893764564120, guid: 794ab45a7023ef84998697f84ead645c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -35
+      objectReference: {fileID: 0}
+    - target: {fileID: 9217624893764564120, guid: 794ab45a7023ef84998697f84ead645c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 9217624893764564120, guid: 794ab45a7023ef84998697f84ead645c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -151
+      objectReference: {fileID: 0}
+    - target: {fileID: 9217624893764564120, guid: 794ab45a7023ef84998697f84ead645c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9217624893764564120, guid: 794ab45a7023ef84998697f84ead645c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9217624893764564120, guid: 794ab45a7023ef84998697f84ead645c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9217624893764564120, guid: 794ab45a7023ef84998697f84ead645c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9217624893764564120, guid: 794ab45a7023ef84998697f84ead645c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9217624893764564120, guid: 794ab45a7023ef84998697f84ead645c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9217624893764564120, guid: 794ab45a7023ef84998697f84ead645c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 794ab45a7023ef84998697f84ead645c, type: 3}
 --- !u!1001 &5487180590306359453
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -908,11 +965,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5487180589889607144, guid: 05f313855de91b343a74caaa85051214, type: 3}
       propertyPath: sensY
-      value: 10
+      value: 125
       objectReference: {fileID: 0}
     - target: {fileID: 5487180589889607144, guid: 05f313855de91b343a74caaa85051214, type: 3}
       propertyPath: maxYLook
-      value: 5
+      value: 70
+      objectReference: {fileID: 0}
+    - target: {fileID: 5487180589889607150, guid: 05f313855de91b343a74caaa85051214, type: 3}
+      propertyPath: m_BackGroundColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5487180589889607150, guid: 05f313855de91b343a74caaa85051214, type: 3}
+      propertyPath: m_BackGroundColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5487180589889607150, guid: 05f313855de91b343a74caaa85051214, type: 3}
+      propertyPath: m_BackGroundColor.r
+      value: 0.93333334
       objectReference: {fileID: 0}
     - target: {fileID: 5487180590145866719, guid: 05f313855de91b343a74caaa85051214, type: 3}
       propertyPath: m_LocalRotation.w
