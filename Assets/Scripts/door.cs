@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-public class door : MonoBehaviour
+public class door : MonoBehaviour, IInteractable
 {
     // Start is called before the first frame update
 
@@ -23,14 +23,9 @@ public class door : MonoBehaviour
         
     }
 
-    void OnTriggerEnter(Collider other)
+    public void Interact()
     {
-        if (other.CompareTag("Player"))
-        {
-            Debug.Log("Hi");
-            SceneManager.LoadScene(sceneLoad);
-            
-        }
-        
+        Debug.Log("Hi");
+        SceneManager.LoadScene(sceneLoad);
     }
 }

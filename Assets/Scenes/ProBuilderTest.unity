@@ -129,7 +129,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh26068
+  m_Name: pb_Mesh26548
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -519,7 +519,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh26090
+  m_Name: pb_Mesh26570
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -1209,6 +1209,30 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdd5cc417c05b014db2ce7299c698c36, type: 3}
+--- !u!1 &1315529063 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5487180589889607148, guid: 05f313855de91b343a74caaa85051214, type: 3}
+  m_PrefabInstance: {fileID: 1545659715}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1315529064 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5487180589889607145, guid: 05f313855de91b343a74caaa85051214, type: 3}
+  m_PrefabInstance: {fileID: 1545659715}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1315529068
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1315529063}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3184de0013537f94d9f699d0831f0f49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactorSource: {fileID: 1315529064}
+  range: 1.5
 --- !u!1001 &1381141195
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1281,10 +1305,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 5487180589889607144, guid: 05f313855de91b343a74caaa85051214, type: 3}
-      propertyPath: maxYLook
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5487180591593819167, guid: 05f313855de91b343a74caaa85051214, type: 3}
       propertyPath: m_IsTrigger
       value: 0

@@ -2371,6 +2371,10 @@ PrefabInstance:
       value: 70
       objectReference: {fileID: 0}
     - target: {fileID: 5487180589889607150, guid: 05f313855de91b343a74caaa85051214, type: 3}
+      propertyPath: field of view
+      value: 65
+      objectReference: {fileID: 0}
+    - target: {fileID: 5487180589889607150, guid: 05f313855de91b343a74caaa85051214, type: 3}
       propertyPath: m_BackGroundColor.b
       value: 1
       objectReference: {fileID: 0}
