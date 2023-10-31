@@ -24,7 +24,7 @@ public class key : MonoBehaviour
         {
             InventoryManager.Instance.AddItem(itemType);
             Destroy(gameObject);
-            doorStatus.doorLockedStatus();
+            doorStatus.isDoorLocked = false;
         }
                
     }
