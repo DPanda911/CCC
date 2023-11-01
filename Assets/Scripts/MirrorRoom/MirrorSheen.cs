@@ -17,7 +17,7 @@ public class MirrorSheen : MonoBehaviour
 
         float offs = Mathf.Clamp(Mathf.Sin(rotV * Mathf.Deg2Rad), -1000, 1000);
 
-        float posX = rP.position.x + (offs * rP.position.z * .4f);
+        float posX = rP.position.x + (offs * rP.position.z * -.75f);
 
         transform.position = new Vector3(posX, transform.position.y, transform.position.z);
     }
