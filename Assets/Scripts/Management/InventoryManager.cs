@@ -27,7 +27,7 @@ public class InventoryManager : MonoBehaviour
 
     public void RemoveItem(AllItems item) //Remove Items to the inventory
     {
-        if (!inventoryItems.Contains(item))
+        if (inventoryItems.Contains(item))
         {
             inventoryItems.Remove(item);
         }
@@ -37,7 +37,12 @@ public class InventoryManager : MonoBehaviour
     public enum AllItems //All Items in the game
     {
         KeyBlue, 
-        KeyPurple
+        KeyPurple,
+        CandleOrange,
+        CandleYellow,
+        CandleBlue,
+        CandlePink,
+        CandleGreen
     }
 
 
