@@ -1484,7 +1484,8 @@ PrefabInstance:
       propertyPath: m_TagString
       value: door
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -953414883125767744, guid: 7d030ef5d5dfe534490183d453153f13, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7d030ef5d5dfe534490183d453153f13, type: 3}
 --- !u!1 &1394799409
 GameObject:
@@ -2176,6 +2177,8 @@ MonoBehaviour:
   sceneLoad: MirrorRoom
   playerPosition: {x: 0, y: 5, z: 5}
   playerRotation: 0
+  requiresItem: 0
+  isDoorLocked: 0
   requiredItem: 0
 --- !u!1 &1988953570
 GameObject:

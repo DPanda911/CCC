@@ -2,15 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class key : MonoBehaviour
+public class key : MonoBehaviour, IInteractable
 {
     [SerializeField] door doorStatus;
-    // Start is called before the first frame update
     [SerializeField] InventoryManager.AllItems itemType;
-    void Start()
-    {
-        
-    }
+    
 
     // Update is called once per frame
     void Update()
@@ -18,14 +14,12 @@ public class key : MonoBehaviour
         
     }
 
-    private void OnTriggerEnter(Collider other)
+    public void Interact()
     {
-        if (other.CompareTag("Player"))
-        {
+   
             InventoryManager.Instance.AddItem(itemType);
             Destroy(gameObject);
-            doorStatus.doorLockedStatus();
-        }
+            doorStatus.isDoorLocked = false;
                
     }
 }

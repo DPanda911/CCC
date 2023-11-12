@@ -9,12 +9,14 @@ public class door : MonoBehaviour, IInteractable
     public string sceneLoad;
     public Vector3 playerPosition;
     public float playerRotation;
+    public bool requiresItem;
+    public bool isDoorLocked;
 
     [SerializeField] InventoryManager.AllItems requiredItem;
 
     void Start()
     {
-        
+        //s
     }
 
     // Update is called once per frame  
@@ -25,15 +27,30 @@ public class door : MonoBehaviour, IInteractable
 
     public void Interact()
     {
-        if (hasRequiredItem(requiredItem))
+        Debug.Log("why");
+        if (requiresItem)
         {
-            if (!doorLockedStatus())
+            Debug.Log("requiresItem check");
+            if (hasRequiredItem(requiredItem))
+            {
+                Debug.Log("itemHadAndDoorLoced");
+                if (!isDoorLocked)
+                {
+                    Debug.Log("Hi");
+                    SceneManager.LoadScene(sceneLoad);
+                }
+            }
+        }
+        else
+        {
+            Debug.Log("doesntRequireItem");
+            if (!isDoorLocked)
             {
                 Debug.Log("Hi");
                 SceneManager.LoadScene(sceneLoad);
             }
         }
-        
+
     }
 
     public bool hasRequiredItem(InventoryManager.AllItems itemRequired)
@@ -47,8 +64,5 @@ public class door : MonoBehaviour, IInteractable
         }
     }
 
-    public bool doorLockedStatus()
-    {
-        return true; 
-    }
+    
 }
