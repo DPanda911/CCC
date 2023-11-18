@@ -16,7 +16,7 @@ public class door : MonoBehaviour, IInteractable
 
     void Start()
     {
-        
+        //s
     }
 
     // Update is called once per frame  
