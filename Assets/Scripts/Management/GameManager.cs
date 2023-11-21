@@ -8,8 +8,8 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
 
-    private Vector3 spawnPos;
-    private float spawnOrientation = 0;
+    public Vector3 spawnPos;
+    public float spawnOrientation = 999999;
 
     void Awake()
     {
@@ -22,5 +22,17 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
         }
         DontDestroyOnLoad(gameObject);
+    }
+
+    public void SetSpawnPos(Vector3 newSpawn, float newOrient)
+    {
+        spawnPos = newSpawn;
+        spawnOrientation = newOrient;
+    }
+
+    public void GetSpawnPos(out Vector3 spawn, out float ori)
+    {
+        spawn = spawnPos;
+        ori = spawnOrientation;
     }
 }

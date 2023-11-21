@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlayerMove : MonoBehaviour
 {
+    [SerializeField] private bool useGMPositioning = true;
+
     [Header("Movement")]
     public float moveSpeed;
 
@@ -35,6 +37,8 @@ public class PlayerMove : MonoBehaviour
     //RigidBody
     Rigidbody rb;
 
+    GameManager gm;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -48,6 +52,20 @@ public class PlayerMove : MonoBehaviour
         rb.freezeRotation = true;
 
         readyToJump = true;
+        gm = GameObject.Find("GameManager").GetComponent<GameManager>();
+
+        if (useGMPositioning)
+        {
+            Vector3 newPos;
+            float newOri;
+            gm.GetSpawnPos(out newPos, out newOri);
+
+            if (newOri != 999999)
+            {
+                transform.position = newPos;
+                transform.eulerAngles = new Vector3(0, newOri, 0);
+            }
+        }
     }
 
     // Update is called once per frame
