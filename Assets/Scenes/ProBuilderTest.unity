@@ -391,6 +391,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -953414883125767744, guid: 7d030ef5d5dfe534490183d453153f13, type: 3}
+      propertyPath: sceneLoad
+      value: StatueRoom
+      objectReference: {fileID: 0}
+    - target: {fileID: -953414883125767744, guid: 7d030ef5d5dfe534490183d453153f13, type: 3}
+      propertyPath: playerRotation
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: -953414883125767744, guid: 7d030ef5d5dfe534490183d453153f13, type: 3}
+      propertyPath: playerPosition.x
+      value: -6
+      objectReference: {fileID: 0}
+    - target: {fileID: -953414883125767744, guid: 7d030ef5d5dfe534490183d453153f13, type: 3}
+      propertyPath: playerPosition.y
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 8785050454954570323, guid: 7d030ef5d5dfe534490183d453153f13, type: 3}
       propertyPath: m_RootOrder
       value: 3

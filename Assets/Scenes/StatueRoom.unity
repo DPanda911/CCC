@@ -1694,6 +1694,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -953414883125767744, guid: 7d030ef5d5dfe534490183d453153f13, type: 3}
+      propertyPath: sceneLoad
+      value: ProBuilderTest
+      objectReference: {fileID: 0}
+    - target: {fileID: -953414883125767744, guid: 7d030ef5d5dfe534490183d453153f13, type: 3}
+      propertyPath: playerRotation
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: -953414883125767744, guid: 7d030ef5d5dfe534490183d453153f13, type: 3}
+      propertyPath: playerPosition.x
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: -953414883125767744, guid: 7d030ef5d5dfe534490183d453153f13, type: 3}
+      propertyPath: playerPosition.y
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 8785050454954570323, guid: 7d030ef5d5dfe534490183d453153f13, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -2351,19 +2367,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5487180591593819362, guid: 05f313855de91b343a74caaa85051214, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.66102093
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 5487180591593819362, guid: 05f313855de91b343a74caaa85051214, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5487180591593819362, guid: 05f313855de91b343a74caaa85051214, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.7503675
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 5487180591593819362, guid: 05f313855de91b343a74caaa85051214, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5487180591593819362, guid: 05f313855de91b343a74caaa85051214, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2371,7 +2387,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5487180591593819362, guid: 05f313855de91b343a74caaa85051214, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 97.244
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 5487180591593819362, guid: 05f313855de91b343a74caaa85051214, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -2793,6 +2809,8 @@ MonoBehaviour:
   sceneLoad: MirrorRoom
   playerPosition: {x: 0, y: 5, z: 5}
   playerRotation: 0
+  requiresItem: 0
+  isDoorLocked: 0
   requiredItem: 0
 --- !u!1 &1949586519
 GameObject:
