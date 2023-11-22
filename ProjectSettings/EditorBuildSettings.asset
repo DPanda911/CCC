@@ -32,4 +32,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/DeceptiveDoors/DeceptiveDoors 3.unity
     guid: feb6780b10451f148a39b62edeb25783
+  - enabled: 1
+    path: Assets/Scenes/StatueRoom.unity
+    guid: 879a528ec1793d449baefd1cf2171e0c
   m_configObjects: {}

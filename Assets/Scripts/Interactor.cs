@@ -10,6 +10,7 @@ public class Interactor : MonoBehaviour
 {
     public Transform interactorSource;
     public float range;
+    public bool canInteract = true;
 
     // Start is called before the first frame update
     void Start()
@@ -20,7 +21,7 @@ public class Interactor : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E)) {
+        if (Input.GetKeyDown(KeyCode.E) && !Input.GetButton("Fire1") && canInteract) {
             Ray r = new Ray(interactorSource.position, interactorSource.forward);
             if (Physics.Raycast(r, out RaycastHit hitinfo, range)) {
                 if (hitinfo.collider.gameObject.TryGetComponent(out IInteractable interactObj)) {

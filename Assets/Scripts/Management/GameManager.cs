@@ -35,4 +35,16 @@ public class GameManager : MonoBehaviour
         spawn = spawnPos;
         ori = spawnOrientation;
     }
+
+    public void EZFreeze()
+    {
+        Rigidbody plr = GameObject.Find("Player").GetComponent<Rigidbody>();
+        MouseRotation mr = GameObject.Find("Main Camera").GetComponent<MouseRotation>();
+        UIPhone uip = GameObject.Find("Phone UI").GetComponent<UIPhone>();
+
+        plr.constraints = RigidbodyConstraints.FreezeAll;
+        mr.sensX = 0;
+        mr.sensY = 0;
+        uip.canPhone = false;
+    }
 }
