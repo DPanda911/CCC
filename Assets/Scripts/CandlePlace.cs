@@ -6,7 +6,9 @@ public class CandlePlace : MonoBehaviour, IInteractable
 {
     [SerializeField] InventoryManager.AllItems itemType;
     public GameObject spawnPrefab;
-
+    public float xPos;
+    public float yPos;
+    public float zPos;
     // Start is called before the first frame update
     void Start()
     {
@@ -29,7 +31,7 @@ public class CandlePlace : MonoBehaviour, IInteractable
                 Debug.Log("HasRequired");
                 InventoryManager.Instance.RemoveItem(itemType);
 
-                Instantiate(spawnPrefab, transform.position, Quaternion.identity);
+                Instantiate(spawnPrefab, new Vector3(xPos, yPos, zPos), Quaternion.identity);
 
             }
             else

@@ -18,6 +18,6 @@ public class rotateInteract : MonoBehaviour, IInteractable
 
     public void Interact()
     {
-        transform.Rotate(10, 4, 28);
+        transform.Rotate(0, 72, 0);
     }
 }
