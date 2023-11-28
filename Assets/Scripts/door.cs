@@ -12,11 +12,20 @@ public class door : MonoBehaviour, IInteractable
     public bool requiresItem;
     public bool isDoorLocked;
 
+    GameManager gm;
+    Interactor intrac;
+    Fader fd;
+
+    private IEnumerator crt;
+
     [SerializeField] InventoryManager.AllItems requiredItem;
 
     void Start()
     {
-        
+        gm = GameObject.Find("GameManager").GetComponent<GameManager>();
+        intrac = GameObject.Find("Main Camera").GetComponent<Interactor>();
+        fd = GameObject.Find("Black Fader").GetComponent<Fader>();
+        crt = GoInDoor();
     }
 
     // Update is called once per frame  
@@ -27,7 +36,6 @@ public class door : MonoBehaviour, IInteractable
 
     public void Interact()
     {
-        Debug.Log("why");
         if (requiresItem)
         {
             Debug.Log("requiresItem check");
@@ -37,7 +45,8 @@ public class door : MonoBehaviour, IInteractable
                 if (!isDoorLocked)
                 {
                     Debug.Log("Hi");
-                    SceneManager.LoadScene(sceneLoad);
+
+                    StartCoroutine(crt);
                 }
             }
         }
@@ -47,7 +56,7 @@ public class door : MonoBehaviour, IInteractable
             if (!isDoorLocked)
             {
                 Debug.Log("Hi");
-                SceneManager.LoadScene(sceneLoad);
+                StartCoroutine(crt);
             }
         }
 
@@ -62,6 +71,16 @@ public class door : MonoBehaviour, IInteractable
         {
             return false;
         }
+    }
+
+    private IEnumerator GoInDoor()
+    {
+        gm.SetSpawnPos(playerPosition, playerRotation);
+        gm.EZFreeze();
+        intrac.canInteract = false;
+        fd.leaving = true;
+        yield return new WaitForSeconds(.35f);
+        SceneManager.LoadScene(sceneLoad);
     }
 
     
