@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class rotateInteract : MonoBehaviour
+public class rotateInteract : MonoBehaviour, IInteractable
 {
     // Start is called before the first frame update
     void Start()
@@ -14,5 +14,10 @@ public class rotateInteract : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void Interact()
+    {
+        transform.Rotate(10, 4, 28);
     }
 }
