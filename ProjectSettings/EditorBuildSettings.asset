@@ -38,4 +38,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/PlayGround for Symbols.unity
     guid: edacd12bded99e54e81557a3eef78b1d
+  - enabled: 1
+    path: Assets/Scenes/WinScene.unity
+    guid: e3c1e58f3c4f8134b839d2c89b115b3d
   m_configObjects: {}

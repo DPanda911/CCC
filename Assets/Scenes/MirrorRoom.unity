@@ -2585,6 +2585,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2310903377982964795, guid: 794ab45a7023ef84998697f84ead645c, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2310903377982964795, guid: 794ab45a7023ef84998697f84ead645c, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2310903377982964795, guid: 794ab45a7023ef84998697f84ead645c, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2310903377982964795, guid: 794ab45a7023ef84998697f84ead645c, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4874769628769274146, guid: 794ab45a7023ef84998697f84ead645c, type: 3}
       propertyPath: m_Name
       value: Renderer
@@ -20641,15 +20657,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -953414883125767744, guid: 7d030ef5d5dfe534490183d453153f13, type: 3}
       propertyPath: playerRotation
-      value: 90
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: -953414883125767744, guid: 7d030ef5d5dfe534490183d453153f13, type: 3}
       propertyPath: playerPosition.x
-      value: -6
+      value: -5.5
       objectReference: {fileID: 0}
     - target: {fileID: -953414883125767744, guid: 7d030ef5d5dfe534490183d453153f13, type: 3}
       propertyPath: playerPosition.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -953414883125767744, guid: 7d030ef5d5dfe534490183d453153f13, type: 3}
+      propertyPath: playerPosition.z
+      value: -3
       objectReference: {fileID: 0}
     - target: {fileID: 8785050454954570323, guid: 7d030ef5d5dfe534490183d453153f13, type: 3}
       propertyPath: m_RootOrder

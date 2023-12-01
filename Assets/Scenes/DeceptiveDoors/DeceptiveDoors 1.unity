@@ -6019,24 +6019,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: -3386553121241536846, guid: d4bce44d0b252e543b92eee9281c7f42, type: 3}
   m_PrefabInstance: {fileID: 1431032337}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1431032341
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1431032340}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e07c70ad7a269a64689c14f644d24d3c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sceneLoad: ProBuilderTest
-  playerPosition: {x: 3.056, y: 0.5, z: -5.581}
-  playerRotation: 330
-  requiresItem: 0
-  isDoorLocked: 0
-  requiredItem: 0
 --- !u!65 &1431032345
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6050,6 +6032,24 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 150.00003, y: 200, z: 12.5}
   m_Center: {x: 0, y: 0, z: 0.000061035156}
+--- !u!114 &1431032346
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1431032340}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e07c70ad7a269a64689c14f644d24d3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneLoad: ProBuilderTest
+  playerPosition: {x: 0.05, y: 0.5, z: 6.5}
+  playerRotation: 180
+  requiresItem: 0
+  isDoorLocked: 0
+  requiredItem: 0
 --- !u!1 &1509026312
 GameObject:
   m_ObjectHideFlags: 0

@@ -9928,7 +9928,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!1 &580677301
 GameObject:
@@ -10040,8 +10040,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneLoad: ProBuilderTest
-  playerPosition: {x: 3.056, y: 0.5, z: -5.581}
-  playerRotation: 330
+  playerPosition: {x: 0.05, y: 0.5, z: 6.5}
+  playerRotation: 180
   requiresItem: 0
   isDoorLocked: 0
   requiredItem: 0
@@ -20710,7 +20710,7 @@ Transform:
   - {fileID: 1533374432}
   - {fileID: 580677302}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1702490535
 PrefabInstance:

@@ -730,8 +730,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneLoad: ProBuilderTest
-  playerPosition: {x: -3.056, y: 0.5, z: 5.581}
-  playerRotation: 150
+  playerPosition: {x: 0.05, y: 0.5, z: -6}
+  playerRotation: 0
   requiresItem: 0
   isDoorLocked: 0
   requiredItem: 0
