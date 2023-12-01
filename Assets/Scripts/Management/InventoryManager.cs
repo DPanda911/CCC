@@ -42,7 +42,8 @@ public class InventoryManager : MonoBehaviour
         CandleYellow,
         CandleBlue,
         CandlePink,
-        CandleGreen
+        CandleGreen,
+        TutorialKey
     }
 
 
