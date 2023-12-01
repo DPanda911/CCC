@@ -58,7 +58,7 @@ public class GameManager : MonoBehaviour
     {
         TMP_Text textObj;
         textObj = GameObject.Find("ViewCount").GetComponent<TextMeshProUGUI>();
-        if (textObj)
+        if (textObj != null)
         {
             textObj.text = viewerCountInt.ToString("#,##0");
         }
