@@ -560,6 +560,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d96b945199faa04d8806ea12211e86e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canPhone: 1
 --- !u!1 &5487180589889607148
 GameObject:
   m_ObjectHideFlags: 0
@@ -679,6 +680,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactorSource: {fileID: 5487180589889607145}
   range: 1.5
+  canInteract: 1
 --- !u!1 &5487180590145866716
 GameObject:
   m_ObjectHideFlags: 0
@@ -918,6 +920,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23769eab0aa7feb4d87f333c8ccb5a08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  useGMPositioning: 1
   moveSpeed: 3.5
   groundDrag: 5
   jumpForce: 5
@@ -1075,8 +1078,8 @@ MonoBehaviour:
 
 '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: d0fb559c33508e444853c3263125c638, type: 2}
-  m_sharedMaterial: {fileID: 6475905208463189919, guid: d0fb559c33508e444853c3263125c638, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 876a271e5d85ee44e9ae7458d12df0a1, type: 2}
+  m_sharedMaterial: {fileID: -3525228908174661564, guid: 876a271e5d85ee44e9ae7458d12df0a1, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

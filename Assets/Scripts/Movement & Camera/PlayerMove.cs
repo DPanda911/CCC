@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMove : MonoBehaviour
 {
@@ -66,6 +67,8 @@ public class PlayerMove : MonoBehaviour
                 transform.eulerAngles = new Vector3(0, newOri, 0);
             }
         }
+        gm.UpdateViewerCount();
+        gm.LogEnteredScene(SceneManager.GetActiveScene().name);
     }
 
     // Update is called once per frame
