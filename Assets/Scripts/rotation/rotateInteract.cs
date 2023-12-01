@@ -18,6 +18,13 @@ public class rotateInteract : MonoBehaviour, IInteractable
 
     public void Interact()
     {
-        transform.Rotate(0, 72, 0);
+        CheckRotation CR = gameObject.GetComponent<CheckRotation>();
+        if (!CR.rotateCorrect)
+        {
+           transform.Rotate(0, 72, 0);
+        }
+        
+
+        
     }
 }
