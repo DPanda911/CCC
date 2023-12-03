@@ -907,6 +907,7 @@ GameObject:
   - component: {fileID: 6124319426886705208}
   - component: {fileID: 3610779031034047574}
   - component: {fileID: 3610779031034047573}
+  - component: {fileID: 6841579456718335936}
   m_Layer: 0
   m_Name: GreenCandle
   m_TagString: Untagged
@@ -948,7 +949,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1490635e9bcb2164f934e363f36a205e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemType: 3
+  itemType: 6
   candle: {fileID: 3610779031034047568}
   isActive: 1
 --- !u!136 &3610779031034047574
@@ -1007,6 +1008,23 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &6841579456718335936
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3610779031034047568}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 486b59d546eee4b4fbd90148f27a6f3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  posCorrect: 0
+  correctXpos: 1.1628
+  correctYpos: 0.1
+  correctZpos: -3.466
+  Pos: {fileID: 3610779031034047568}
 --- !u!1 &3676473332861849109
 GameObject:
   m_ObjectHideFlags: 0
