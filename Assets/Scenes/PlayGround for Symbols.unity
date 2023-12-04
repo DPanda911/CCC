@@ -203,6 +203,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: pentaPiece (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5d24f94574cbfde4b903107b2cb19975, type: 3}
+      propertyPath: m_TagString
+      value: Pentagram
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d24f94574cbfde4b903107b2cb19975, type: 3}
 --- !u!1 &154364924 stripped
@@ -571,6 +575,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PinkCandle
       objectReference: {fileID: 0}
+    - target: {fileID: 3610779031034047568, guid: fb45a2a2649fb684c91594db76b0e888, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 4131983154695567082, guid: fb45a2a2649fb684c91594db76b0e888, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -770,6 +778,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 5d24f94574cbfde4b903107b2cb19975, type: 3}
       propertyPath: m_Name
       value: pentaPiece (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5d24f94574cbfde4b903107b2cb19975, type: 3}
+      propertyPath: m_TagString
+      value: Pentagram
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d24f94574cbfde4b903107b2cb19975, type: 3}
@@ -1206,6 +1218,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: pentaPiece (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5d24f94574cbfde4b903107b2cb19975, type: 3}
+      propertyPath: m_TagString
+      value: Pentagram
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d24f94574cbfde4b903107b2cb19975, type: 3}
 --- !u!1 &765056648 stripped
@@ -1489,6 +1505,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: pentaPiece
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5d24f94574cbfde4b903107b2cb19975, type: 3}
+      propertyPath: m_TagString
+      value: Pentagram
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d24f94574cbfde4b903107b2cb19975, type: 3}
 --- !u!65 &912907576
@@ -1579,6 +1599,72 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 108.706245, y: 99.99999, z: 100}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &1022303506
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1022303508}
+  - component: {fileID: 1022303507}
+  - component: {fileID: 1022303509}
+  m_Layer: 0
+  m_Name: CheckPosBool
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1022303507
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1022303506}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cc19c76a87b7c84cb4ee19530d0da16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 919132149155446097, guid: fdd5cc417c05b014db2ce7299c698c36, type: 3}
+  check: 0
+  tag: Candle
+  amountOfObj: 5
+--- !u!4 &1022303508
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1022303506}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.122, y: 0.93, z: 0.069}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1022303509
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1022303506}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19b083f58c1fa484a95cf5bc24005275, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 919132149155446097, guid: fdd5cc417c05b014db2ce7299c698c36, type: 3}
+  check: 0
+  check2: 0
+  tag: Candle
+  amountOfObj: 5
 --- !u!65 &1057500675
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2183,6 +2269,10 @@ PrefabInstance:
     - target: {fileID: 3610779031034047568, guid: 2dca9d3c2e44d7f4ab401aba0ae0c39f, type: 3}
       propertyPath: m_Name
       value: GreenCandle
+      objectReference: {fileID: 0}
+    - target: {fileID: 3610779031034047568, guid: 2dca9d3c2e44d7f4ab401aba0ae0c39f, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 4131983154695567082, guid: 2dca9d3c2e44d7f4ab401aba0ae0c39f, type: 3}
       propertyPath: m_RootOrder
@@ -2965,6 +3055,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BlueCandle
       objectReference: {fileID: 0}
+    - target: {fileID: 3610779031034047568, guid: 27c32a2c9e009ec44bf9e032f02dec8a, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 4131983154695567082, guid: 27c32a2c9e009ec44bf9e032f02dec8a, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -3137,6 +3231,10 @@ PrefabInstance:
     - target: {fileID: 3610779031034047568, guid: cfb376015e95ffe46b563d6c9b11bae7, type: 3}
       propertyPath: m_Name
       value: OrangeCandle
+      objectReference: {fileID: 0}
+    - target: {fileID: 3610779031034047568, guid: cfb376015e95ffe46b563d6c9b11bae7, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 4131983154695567082, guid: cfb376015e95ffe46b563d6c9b11bae7, type: 3}
       propertyPath: m_RootOrder
@@ -3340,6 +3438,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 5d24f94574cbfde4b903107b2cb19975, type: 3}
       propertyPath: m_Name
       value: pentaPiece (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5d24f94574cbfde4b903107b2cb19975, type: 3}
+      propertyPath: m_TagString
+      value: Pentagram
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d24f94574cbfde4b903107b2cb19975, type: 3}
@@ -4076,6 +4178,10 @@ PrefabInstance:
     - target: {fileID: 3610779031034047568, guid: 21f9eca64b2908148a731bf4fae09f44, type: 3}
       propertyPath: m_Name
       value: YellowCandle
+      objectReference: {fileID: 0}
+    - target: {fileID: 3610779031034047568, guid: 21f9eca64b2908148a731bf4fae09f44, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 4131983154695567082, guid: 21f9eca64b2908148a731bf4fae09f44, type: 3}
       propertyPath: m_RootOrder

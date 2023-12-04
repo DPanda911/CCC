@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - door
+  - Candle
+  - Pentagram
   layers:
   - Default
   - TransparentFX
