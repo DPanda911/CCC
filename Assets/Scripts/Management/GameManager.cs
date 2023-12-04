@@ -106,6 +106,8 @@ public class GameManager : MonoBehaviour
     {
         viewerCount += memberAdd;
         vc_rate += rateChange;
+
+        Debug.Log("AUDIENCE WOO'D ----\nView Count Addition: " + memberAdd + "\nRate Change: " + rateChange);
     }
 
 

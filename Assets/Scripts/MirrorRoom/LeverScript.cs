@@ -13,11 +13,14 @@ public class LeverScript : MonoBehaviour, IInteractable
 
     public GameObject door;
 
+    private GameManager gm;
+
 
     // Start is called before the first frame update
     void Start()
     {
         anim = GetComponent<Animator>();
+        gm = GameObject.Find("GameManager").GetComponent<GameManager>();
     }
 
     // Update is called once per frame
@@ -34,6 +37,7 @@ public class LeverScript : MonoBehaviour, IInteractable
             if (!flipped)
             {
                 FlipLever();
+                gm.AudienceWoo(0.667f, 0.00025f);
                 if (linkedLever)
                 {
                     linkedLever.GetComponent<LeverScript>().FlipLever();
