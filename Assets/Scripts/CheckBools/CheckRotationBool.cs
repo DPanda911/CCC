@@ -23,7 +23,7 @@ public class CheckRotationBool : MonoBehaviour
         {
             checkRotationBool();
         }
-        if (check2 && !check)
+        else if (check2 && !check)
         {
             GetComponent<CheckPosBool>().checkPosBool();
             check = true; 
@@ -46,6 +46,7 @@ public class CheckRotationBool : MonoBehaviour
                 if (!obj.GetComponent<CheckRotation>().rotateCorrect)
                 {
                     allTrue = false;
+                    break;
                 }
                 else
                 {
