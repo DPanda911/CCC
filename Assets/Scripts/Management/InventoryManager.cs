@@ -12,7 +12,7 @@ public class InventoryManager : MonoBehaviour
     public List<AllItems> inventoryItems = new List<AllItems>();
 
 
-    private void Awake()
+    private void Start()
     {
         Instance = this;
     }

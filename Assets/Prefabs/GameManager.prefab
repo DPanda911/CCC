@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4477113386341377690}
   - component: {fileID: 8095007756334032755}
+  - component: {fileID: 2916446103489455912}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -46,3 +47,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPos: {x: 0, y: 0, z: 0}
   spawnOrientation: 999999
+  viewerCount: 250
+  vc_rate: 0.01
+  vc_grav: -0.000004
+  visitedRooms: []
+  dialogueTags: []
+--- !u!114 &2916446103489455912
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5947808098641686715}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9dd50c770e3d1be4191944040dab6d72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inventoryItems: 
