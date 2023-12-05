@@ -7,10 +7,14 @@ public class UIPhone : MonoBehaviour
     private Animator anim;
     private string curState = "Phone_Start";
     public bool canPhone = true;
+
+    Interactor intr;
     // Start is called before the first frame update
     void Start()
     {
         anim = GetComponent<Animator>();
+
+        intr = GameObject.Find("Main Camera").GetComponent<Interactor>();
     }
 
     // Update is called once per frame
@@ -19,10 +23,12 @@ public class UIPhone : MonoBehaviour
         if (Input.GetButtonDown("Fire1") && (canPhone))
         {
             PlayAnimation("Phone_Lift");
+            intr.canInteract = false;
         }
         if (Input.GetButtonUp("Fire1") && (curState == "Phone_Lift"))
         {
             PlayAnimation("Phone_Rest");
+            intr.canInteract = true;
         }
     }
 

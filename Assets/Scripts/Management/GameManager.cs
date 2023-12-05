@@ -26,6 +26,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private float vc_grav = -0.000004f;
 
     [SerializeField] private List<string> visitedRooms = new List<string>();
+    [SerializeField] private List<string> dialogueTags = new List<string>();
 
 
     void Awake()
