@@ -11,6 +11,10 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
 
+   
+
+    
+
     public Vector3 spawnPos;
     public float spawnOrientation = 999999;
 
@@ -109,6 +113,8 @@ public class GameManager : MonoBehaviour
 
         Debug.Log("AUDIENCE WOO'D ----\nView Count Addition: " + memberAdd + "\nRate Change: " + rateChange);
     }
+
+   
 
 
 }

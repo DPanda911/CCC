@@ -910,7 +910,7 @@ GameObject:
   - component: {fileID: -9026668026501096959}
   m_Layer: 0
   m_Name: OrangeCandle
-  m_TagString: Untagged
+  m_TagString: Candle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
