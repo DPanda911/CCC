@@ -37,7 +37,7 @@ public class CheckRotationBool : MonoBehaviour
     {
         GameObject[] taggedObjects = GameObject.FindGameObjectsWithTag("Pentagram");
         bool allTrue = true;
-        Debug.Log(taggedObjects.Length);
+        //Debug.Log(taggedObjects.Length);
         if (taggedObjects.Length == amountOfObj)
         {
 
