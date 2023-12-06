@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028346, g: 0.22571373, b: 0.30692244, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -600,7 +600,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6124319426886705208, guid: fb45a2a2649fb684c91594db76b0e888, type: 3}
       propertyPath: itemType
-      value: 5
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fb45a2a2649fb684c91594db76b0e888, type: 3}
@@ -1756,7 +1756,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ddd8a2c45fd97af4892ef2f7f98bed79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemType: 2
+  itemType: 4
   spawnPrefab: {fileID: 3610779031034047568, guid: cfb376015e95ffe46b563d6c9b11bae7, type: 3}
   xPos: -3.046
   yPos: 0.1
@@ -1872,7 +1872,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ddd8a2c45fd97af4892ef2f7f98bed79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemType: 5
+  itemType: 7
   spawnPrefab: {fileID: 3610779031034047568, guid: fb45a2a2649fb684c91594db76b0e888, type: 3}
   xPos: -3.039
   yPos: 0.1
@@ -2171,7 +2171,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ddd8a2c45fd97af4892ef2f7f98bed79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemType: 4
+  itemType: 6
   spawnPrefab: {fileID: 3610779031034047568, guid: 27c32a2c9e009ec44bf9e032f02dec8a, type: 3}
   xPos: 3.741
   yPos: 0.1
@@ -2250,7 +2250,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6124319426886705208, guid: 2dca9d3c2e44d7f4ab401aba0ae0c39f, type: 3}
       propertyPath: itemType
-      value: 6
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2dca9d3c2e44d7f4ab401aba0ae0c39f, type: 3}
@@ -3035,7 +3035,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6124319426886705208, guid: 27c32a2c9e009ec44bf9e032f02dec8a, type: 3}
       propertyPath: itemType
-      value: 4
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 27c32a2c9e009ec44bf9e032f02dec8a, type: 3}
@@ -3212,7 +3212,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6124319426886705208, guid: cfb376015e95ffe46b563d6c9b11bae7, type: 3}
       propertyPath: itemType
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cfb376015e95ffe46b563d6c9b11bae7, type: 3}
@@ -3880,7 +3880,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ddd8a2c45fd97af4892ef2f7f98bed79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemType: 3
+  itemType: 5
   spawnPrefab: {fileID: 3610779031034047568, guid: 21f9eca64b2908148a731bf4fae09f44, type: 3}
   xPos: 1.15
   yPos: 0.1
@@ -4075,7 +4075,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ddd8a2c45fd97af4892ef2f7f98bed79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemType: 6
+  itemType: 8
   spawnPrefab: {fileID: 3610779031034047568, guid: 2dca9d3c2e44d7f4ab401aba0ae0c39f, type: 3}
   xPos: 1.1628
   yPos: 0.1
@@ -4156,6 +4156,10 @@ PrefabInstance:
     - target: {fileID: 4131983154695567082, guid: 21f9eca64b2908148a731bf4fae09f44, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6124319426886705208, guid: 21f9eca64b2908148a731bf4fae09f44, type: 3}
+      propertyPath: itemType
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 21f9eca64b2908148a731bf4fae09f44, type: 3}

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class UIPhone : MonoBehaviour
 {
@@ -8,13 +9,26 @@ public class UIPhone : MonoBehaviour
     private string curState = "Phone_Start";
     public bool canPhone = true;
 
+    [SerializeField] private Image batteryImg;
+    [SerializeField] private Image deadBatteryImg;
+
+    [Header("Sprites")]
+    [SerializeField] private Sprite s_battery_full;
+    [SerializeField] private Sprite s_battery_mid;
+    [SerializeField] private Sprite s_battery_low;
+
     Interactor intr;
+
+    GameManager gm;
+
+    private float battLevel;
     // Start is called before the first frame update
     void Start()
     {
         anim = GetComponent<Animator>();
 
         intr = GameObject.Find("Main Camera").GetComponent<Interactor>();
+        gm = GameObject.Find("GameManager").GetComponent<GameManager>();
     }
 
     // Update is called once per frame
@@ -30,6 +44,9 @@ public class UIPhone : MonoBehaviour
             PlayAnimation("Phone_Rest");
             intr.canInteract = true;
         }
+
+        battLevel = gm.GetBattery();
+        UpdateBatteryUI(battLevel);
     }
 
     private void PlayAnimation(string newState)
@@ -39,5 +56,26 @@ public class UIPhone : MonoBehaviour
         anim.Play(newState);
 
         curState = newState;
+    }
+
+    private void UpdateBatteryUI(float level)
+    {
+        if (level <= 0) {
+            deadBatteryImg.enabled = true;
+            if (Mathf.Sin(Time.time*25) > 0) {
+                deadBatteryImg.color = new Color(1f, 1f, 1f, 1f);
+            } else {
+                deadBatteryImg.color = new Color(0.8f, 0.2f, 0.2f, 1f);
+            }
+        } else {
+            deadBatteryImg.enabled = false;
+            if (level < 0.3) {
+                batteryImg.sprite = s_battery_low;
+            } else if (level < 0.6) {
+                batteryImg.sprite = s_battery_mid;
+            } else {
+                batteryImg.sprite = s_battery_full;
+            }
+        }
     }
 }

@@ -7,6 +7,8 @@ public class Disable : MonoBehaviour, IInteractable
     // Start is called before the first frame update
     [SerializeField] InventoryManager.AllItems itemType;
 
+    [SerializeField] bool destroyItem = false;
+
     void Start()
     {
         
@@ -23,6 +25,7 @@ public class Disable : MonoBehaviour, IInteractable
 
         if (hasRequiredItem(itemType))
         {
+
             Destroy(gameObject);
 
            
@@ -40,6 +43,10 @@ public class Disable : MonoBehaviour, IInteractable
     {
         if (InventoryManager.Instance.inventoryItems.Contains(itemRequired))
         {
+            if (destroyItem)
+            {
+                InventoryManager.Instance.RemoveItem(itemRequired);
+            }
             return true;
         }
         else

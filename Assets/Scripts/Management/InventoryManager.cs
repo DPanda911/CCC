@@ -23,6 +23,8 @@ public class InventoryManager : MonoBehaviour
         {
             inventoryItems.Add(item);
         }
+
+        UpdateUI();
     }
 
     public void RemoveItem(AllItems item) //Remove Items to the inventory
@@ -31,19 +33,47 @@ public class InventoryManager : MonoBehaviour
         {
             inventoryItems.Remove(item);
         }
+        UpdateUI();
+    }
+
+    public List<int> GetInventoryAsInt()
+    {
+        Debug.Log("Getting Inventory as Integers...");
+        List<int> inv = new List<int>();
+        
+        for (int i = 0; (i < 5) && (i < inventoryItems.Count); i++)
+        {
+            inv.Add((int) inventoryItems[i]);
+            Debug.Log("Adding " + inventoryItems[i] + " ( " + (int) inventoryItems[i] + " )");
+        }
+        Debug.Log("Done!");
+
+        return inv;
+    }
+
+    private void UpdateUI()
+    {
+        RendAndUI rau = GameObject.Find("Renderer").GetComponent<RendAndUI>();
+        if (rau != null)
+        {
+            rau.RefreshInventoryUI();
+        }
     }
 
 
     public enum AllItems //All Items in the game
     {
-        KeyBlue, 
-        KeyPurple,
-        CandleOrange,
-        CandleYellow,
-        CandleBlue,
-        CandlePink,
-        CandleGreen,
-        TutorialKey
+        KeyBlue = 0, 
+        KeyPurple = 1,
+        KeyGreen = 2,
+        KeyOrange = 3,
+        CandleOrange = 4,
+        CandleYellow = 5,
+        CandleBlue = 6,
+        CandlePink = 7,
+        CandleGreen = 8,
+        TutorialKey = 9,
+        BatteryPack = 10
     }
 
 

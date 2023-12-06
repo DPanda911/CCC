@@ -11,20 +11,23 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
 
-   
-
-    
-
+    [Header("Door Spawn Positions")]
     public Vector3 spawnPos;
     public float spawnOrientation = 999999;
 
+    [Header("Battery")]
+    public float battery = 1;
+    [SerializeField] private float batt_rate = 0.0075f;
+    private bool batt_audPiss = false;
+
+    [Header("View Count")]
     public float viewerCount = 250;
     private int viewerCountInt = 250;
     private float timeSinceLastUpdate = 0;
-
     [SerializeField] private float vc_rate = 0.01f;
     [SerializeField] private float vc_grav = -0.000004f;
 
+    [Header("Save Tags")]
     [SerializeField] private List<string> visitedRooms = new List<string>();
     [SerializeField] private List<string> dialogueTags = new List<string>();
 
@@ -57,6 +60,9 @@ public class GameManager : MonoBehaviour
             timeSinceLastUpdate = Time.time;
             UpdateViewerCount();
         }
+
+        battery -= batt_rate * Time.deltaTime;
+        battery = Mathf.Clamp(battery, 0f, 1f);
     }
 
     public void UpdateViewerCount()
@@ -115,6 +121,18 @@ public class GameManager : MonoBehaviour
         Debug.Log("AUDIENCE WOO'D ----\nView Count Addition: " + memberAdd + "\nRate Change: " + rateChange);
     }
 
+    public float GetBattery()
+    {
+        if (battery <= 0 && !batt_audPiss) {
+            batt_audPiss = true;
+            AudienceWoo(0, -0.1f);
+        }
+        if (battery > 0 && batt_audPiss) {
+            batt_audPiss = false;
+            AudienceWoo(0, 0.1f);
+        }
+        return battery;
+    }
    
 
 
