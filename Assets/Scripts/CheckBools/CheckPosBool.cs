@@ -39,6 +39,7 @@ public class CheckPosBool : MonoBehaviour
                 if (!obj.GetComponent<CheckPos>().posCorrect)
                 {
                     allTrue = false;
+                    break;
                 }
                 else
                 {
