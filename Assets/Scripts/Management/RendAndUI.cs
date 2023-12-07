@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class RendAndUI : MonoBehaviour
 {
@@ -26,6 +27,8 @@ public class RendAndUI : MonoBehaviour
     [SerializeField] private GameObject slotPrefab;
     [SerializeField] private GameObject itemListObject;
     [SerializeField] private List<Sprite> itemImages = new List<Sprite>(); 
+    [Space]
+    [SerializeField] private GameObject messagePrefab;
 
     [Header("Internal Stuff")]
     [SerializeField] private List<GameObject> inventorySlots = new List<GameObject>();
@@ -64,5 +67,19 @@ public class RendAndUI : MonoBehaviour
             newSlot.transform.localPosition = new Vector3(0, 0, 0);
             inventorySlots.Add(newSlot);
         }
+    }
+
+    public void SpawnDialogue(string message) {
+        Transform peskyCurrentMessage = gameObject.transform.Find("Canvas/UI Message(Clone)");
+        if (peskyCurrentMessage != null)
+        {
+            Destroy(peskyCurrentMessage.gameObject);
+        }
+
+        GameObject newMessage = Instantiate(messagePrefab);
+        TMP_Text msgText = newMessage.GetComponent<TextMeshProUGUI>();
+        msgText.text = message;
+        newMessage.transform.SetParent(gameObject.transform.Find("Canvas"));
+        newMessage.transform.SetSiblingIndex(1);
     }
 }

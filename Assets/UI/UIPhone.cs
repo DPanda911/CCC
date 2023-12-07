@@ -43,6 +43,7 @@ public class UIPhone : MonoBehaviour
         {
             PlayAnimation("Phone_Rest");
             intr.canInteract = true;
+            gm.DialogueMessage("If my viewer count hits zero, I'll have no choice but to <color=#f77>stop the stream</color>.", "ViewCountExplanation");
         }
 
         battLevel = gm.GetBattery();

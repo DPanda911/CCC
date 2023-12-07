@@ -583,6 +583,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 7805b70b95f64a4429421d2e7dc48f9d, type: 3}
   - {fileID: 21300000, guid: e889641b7922a8d448e51bef4d2a0a96, type: 3}
   - {fileID: 21300000, guid: 3e267ba2a4bfaee4ab58db2e5854f11e, type: 3}
+  messagePrefab: {fileID: 8615194237669050945, guid: 4239db72f0180c643bf8cb2ade3199fd, type: 3}
   inventorySlots: []
 --- !u!1 &5636122461658009644
 GameObject:

@@ -133,6 +133,21 @@ public class GameManager : MonoBehaviour
         }
         return battery;
     }
+
+    public void DialogueMessage(string message, string tag)
+    {
+        if (tag != null) {
+            if ((dialogueTags.Contains(tag))) {
+                return;
+            }
+            dialogueTags.Add(tag);
+        }
+        RendAndUI rau = GameObject.Find("Renderer").GetComponent<RendAndUI>();
+        if (rau != null)
+        {
+            rau.SpawnDialogue(message);
+        }
+    }
    
 
 
