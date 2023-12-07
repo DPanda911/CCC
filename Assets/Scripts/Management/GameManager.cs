@@ -136,7 +136,7 @@ public class GameManager : MonoBehaviour
 
     public void DialogueMessage(string message, string tag)
     {
-        if (tag != null) {
+        if (tag != null && tag != "IGNORE") {
             if ((dialogueTags.Contains(tag))) {
                 return;
             }
