@@ -21,6 +21,8 @@ public class UIPhone : MonoBehaviour
 
     GameManager gm;
 
+    private bool hasPanicked = false;
+
     private float battLevel;
     // Start is called before the first frame update
     void Start()
@@ -43,7 +45,14 @@ public class UIPhone : MonoBehaviour
         {
             PlayAnimation("Phone_Rest");
             intr.canInteract = true;
-            gm.DialogueMessage("It's important I check on that often. If my viewer count hits zero, I'll have no choice but to <color=#f77>stop the stream</color>.", "ViewCountExplanation");
+            gm.DialogueMessage("It's important I check on that often. If my viewer count hits zero, I'll have no choice but to <color=#f77>stop the stream</color>.", "ViewCountExplanation", 3);
+        }
+
+        if ((curState == "Phone_Lift") && !hasPanicked && (gm.GetBattery() <= 0)) {
+            if (gm.GetBattery() <= 0) {
+                IEnumerator crt = ImOutOfBattery();
+                StartCoroutine(crt);
+            }
         }
 
         battLevel = gm.GetBattery();
@@ -78,5 +87,10 @@ public class UIPhone : MonoBehaviour
                 batteryImg.sprite = s_battery_full;
             }
         }
+    }
+
+    private IEnumerator ImOutOfBattery() {
+        yield return new WaitForSeconds(.35f);
+        gm.DialogueMessage("Oh crap, out of battery?!? I'M <color=#f77>NOT BROADCASTING</color>! My viewer count is probably plummeting! I need to find myself a <color=#fa7>battery pack</color> or something, and FAST!", "WaitImOutOfBattery", 4);
     }
 }

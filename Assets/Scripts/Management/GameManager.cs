@@ -134,7 +134,7 @@ public class GameManager : MonoBehaviour
         return battery;
     }
 
-    public void DialogueMessage(string message, string tag)
+    public void DialogueMessage(string message, string tag = null, int mood = 0)
     {
         if (tag != null && tag != "IGNORE") {
             if ((dialogueTags.Contains(tag))) {
@@ -145,7 +145,7 @@ public class GameManager : MonoBehaviour
         RendAndUI rau = GameObject.Find("Renderer").GetComponent<RendAndUI>();
         if (rau != null)
         {
-            rau.SpawnDialogue(message);
+            rau.SpawnDialogue(message, mood);
         }
     }
    

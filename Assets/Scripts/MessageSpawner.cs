@@ -8,6 +8,8 @@ public class MessageSpawner : MonoBehaviour
     [SerializeField] private string message;
     [Tooltip("This tag ensures the dialogue won't repeat.")]
     [SerializeField] private string repeatTag;
+    [Tooltip("The sound made by the player.")]
+    [SerializeField] private int mood = 0;
 
     GameManager gm;
     MeshRenderer mr;
@@ -23,7 +25,7 @@ public class MessageSpawner : MonoBehaviour
         Debug.Log(ot.gameObject.name);
         if (ot.gameObject.name == "Player")
         {
-            gm.DialogueMessage(message, repeatTag);
+            gm.DialogueMessage(message, repeatTag, mood);
         }
     }
 }

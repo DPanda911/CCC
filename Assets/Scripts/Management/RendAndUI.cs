@@ -35,12 +35,21 @@ public class RendAndUI : MonoBehaviour
 
     InventoryManager im;
 
+    [Header("Sounds")]
+    [SerializeField] private AudioClip[] dialogueSounds;
+
+    private AudioSource src;
+
     // Start is called before the first frame update
     void Start()
     {
         im = GameObject.Find("GameManager").GetComponent<InventoryManager>();
 
         RefreshInventoryUI();
+
+        src = gameObject.AddComponent<AudioSource>();
+        src.playOnAwake = false;
+        src.spatialBlend = 0f;
     }
 
     // Update is called once per frame
@@ -69,7 +78,7 @@ public class RendAndUI : MonoBehaviour
         }
     }
 
-    public void SpawnDialogue(string message) {
+    public void SpawnDialogue(string message, int mood) {
         Transform peskyCurrentMessage = gameObject.transform.Find("Canvas/UI Message(Clone)");
         if (peskyCurrentMessage != null)
         {
@@ -81,5 +90,17 @@ public class RendAndUI : MonoBehaviour
         msgText.text = message;
         newMessage.transform.SetParent(gameObject.transform.Find("Canvas"));
         newMessage.transform.SetSiblingIndex(1);
+
+        
+        int pick;
+        if ((mood < 0) || (mood > dialogueSounds.Length - 1)) {
+            pick = 0;
+            Debug.LogWarning("Dialogue Mood [" + mood + "] doesn't exist. Your mood should be between 0-" + (dialogueSounds.Length - 1));
+        } else {
+            pick = mood;
+        }
+        src.clip = dialogueSounds[pick];
+        src.pitch = Random.Range(0.97f, 1.03f);
+        src.Play();
     }
 }
