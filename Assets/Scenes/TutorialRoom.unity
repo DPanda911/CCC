@@ -1424,8 +1424,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6956201757947515272, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
       propertyPath: message
-      value: I should probably check my phone with <color=#ff7>[Q]</color>. Just
-        wanna make sure my stream's online and my viewers aren't bored.
+      value: I should probably check my phone by holding down <color=#ff7>[Q]</color>.
+        Just wanna make sure my stream's online and my viewers aren't bored.
       objectReference: {fileID: 0}
     - target: {fileID: 6956201757947515272, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
       propertyPath: repeatTag

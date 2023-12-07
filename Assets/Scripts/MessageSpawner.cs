@@ -10,10 +10,13 @@ public class MessageSpawner : MonoBehaviour
     [SerializeField] private string repeatTag;
 
     GameManager gm;
+    MeshRenderer mr;
     // Start is called before the first frame update
     void Start()
     {
         gm = GameObject.Find("GameManager").GetComponent<GameManager>();
+        mr = GetComponent<MeshRenderer>();
+        mr.enabled = false;
     }
 
     private void OnTriggerEnter(Collider ot) {
