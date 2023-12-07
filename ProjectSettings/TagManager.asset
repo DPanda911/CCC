@@ -8,6 +8,7 @@ TagManager:
   - Candle
   - Pentagram
   - Statue
+  - Void
   layers:
   - Default
   - TransparentFX
