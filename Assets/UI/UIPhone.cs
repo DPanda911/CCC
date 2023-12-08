@@ -24,6 +24,11 @@ public class UIPhone : MonoBehaviour
     private bool hasPanicked = false;
 
     private float battLevel;
+
+    [Space]
+    AudioSource src;
+    [SerializeField] private AudioClip deadBeep;
+    private bool hasBeeped = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -31,6 +36,17 @@ public class UIPhone : MonoBehaviour
 
         intr = GameObject.Find("Main Camera").GetComponent<Interactor>();
         gm = GameObject.Find("GameManager").GetComponent<GameManager>();
+
+        src = gameObject.AddComponent<AudioSource>();
+
+        src.playOnAwake = false;
+        src.volume = 0.5f;
+        src.spatialBlend = 1f;
+        src.dopplerLevel = 0f;
+        src.minDistance = 11.25f;
+        src.maxDistance = 50f;
+
+        src.clip = deadBeep;
     }
 
     // Update is called once per frame
@@ -74,8 +90,13 @@ public class UIPhone : MonoBehaviour
             deadBatteryImg.enabled = true;
             if (Mathf.Sin(Time.time*25) > 0) {
                 deadBatteryImg.color = new Color(1f, 1f, 1f, 1f);
+                if (!hasBeeped && (curState == "Phone_Lift")) {
+                    hasBeeped = true;
+                    src.Play();
+                }
             } else {
                 deadBatteryImg.color = new Color(0.8f, 0.2f, 0.2f, 1f);
+                hasBeeped = false;
             }
         } else {
             deadBatteryImg.enabled = false;

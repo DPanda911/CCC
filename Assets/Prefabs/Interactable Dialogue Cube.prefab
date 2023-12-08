@@ -110,5 +110,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f2a9cce3923f99428932835df881297, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  message: What a strange looking man. I bet he has a unique selection of pants.
+  message:
+  - Your message goes here!
   repeatTag: IGNORE
+  mood: 0
+  loopMethod: 0

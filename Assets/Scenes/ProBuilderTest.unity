@@ -314,7 +314,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9217624893764564120, guid: 794ab45a7023ef84998697f84ead645c, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 9217624893764564120, guid: 794ab45a7023ef84998697f84ead645c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -700,7 +700,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4477113386341377690, guid: aa527c5760eed244384d4ed14f21edf0, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4477113386341377690, guid: aa527c5760eed244384d4ed14f21edf0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1131,6 +1131,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 2.0701807
       objectReference: {fileID: 0}
+    - target: {fileID: 7829988470548764905, guid: da5193fb14de71a469131a295cfe63f5, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8104160865730298325, guid: da5193fb14de71a469131a295cfe63f5, type: 3}
       propertyPath: m_LocalPosition.y
       value: 5.2759132
@@ -1445,7 +1449,19 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7164801062060796452, guid: a923e915a22545b438b4ddac6338512d, type: 3}
+      propertyPath: mood
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7164801062060796452, guid: a923e915a22545b438b4ddac6338512d, type: 3}
       propertyPath: message
+      value: That's... reassuring?
+      objectReference: {fileID: 0}
+    - target: {fileID: 7164801062060796452, guid: a923e915a22545b438b4ddac6338512d, type: 3}
+      propertyPath: message.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7164801062060796452, guid: a923e915a22545b438b4ddac6338512d, type: 3}
+      propertyPath: message.Array.data[0]
       value: That's... reassuring?
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -2060,7 +2076,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 30.626, z: 0}
 --- !u!23 &6956201758396539218
 MeshRenderer:
@@ -2157,5 +2173,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f2a9cce3923f99428932835df881297, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  message: What a strange looking man. I bet he has a unique selection of pants.
+  message:
+  - I bet this guy wears <color=#f77>v<color=#fa7>e<color=#ff7>r<color=#af7>y <color=#7fa>n<color=#7ff>o<color=#7af>r<color=#77f>m<color=#a7f>a<color=#f7f>l
+    <color=#f77>p<color=#fa7>a<color=#ff7>n<color=#af7>t<color=#7f7>s</color>.
   repeatTag: IGNORE
+  mood: 2
+  loopMethod: 0
