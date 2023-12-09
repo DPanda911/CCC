@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: e23e844d69bd28542a46072f74c75e68, type: 2}
   m_LightingSettings: {fileID: 0}
 --- !u!196 &4
 NavMeshSettings:
@@ -191,6 +191,158 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &489584161
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 489584164}
+  - component: {fileID: 489584163}
+  - component: {fileID: 489584162}
+  m_Layer: 5
+  m_Name: SpookyViewerImage
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &489584162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 489584161}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 0.46666667, b: 0.46666667, a: 0.0627451}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: b118533ba571ad749872ff534ad8aab2, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &489584163
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 489584161}
+  m_CullTransparentMesh: 1
+--- !u!224 &489584164
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 489584161}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1955772429}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 112, y: 120}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &658561682
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 658561683}
+  - component: {fileID: 658561685}
+  - component: {fileID: 658561684}
+  m_Layer: 5
+  m_Name: Static
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &658561683
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 658561682}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1955772429}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 272, y: 377}
+  m_SizeDelta: {x: 1024, y: 1024}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &658561684
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 658561682}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: ef3c4af9c4c26654093914dbf21e0a18, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &658561685
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 658561682}
+  m_CullTransparentMesh: 1
 --- !u!1001 &691505699
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -284,8 +436,8 @@ Camera:
   m_GameObject: {fileID: 747366753}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -786,7 +938,9 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1072181969}
+  - {fileID: 489584164}
   - {fileID: 2083225555}
+  - {fileID: 658561683}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -809,30 +963,46 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   txt: {fileID: 2083225556}
   img: {fileID: 1072181970}
+  spookyImage: {fileID: 489584162}
+  staticImage: {fileID: 658561682}
+  faceSprites:
+  - {fileID: 21300000, guid: b118533ba571ad749872ff534ad8aab2, type: 3}
+  - {fileID: 21300000, guid: 6b62f58d3afdc70469bfc6fee042c4c6, type: 3}
+  - {fileID: 21300000, guid: 749db948a35edd84f99ceb2560f92117, type: 3}
+  - {fileID: 21300000, guid: d5b855c1a823395478b94e8542286bd7, type: 3}
+  - {fileID: 21300000, guid: 633416ce1aafc4248aa557167fe67ee9, type: 3}
   dialogues:
   - My name is Nelle. Nelle Norman.<br><alpha=#22>[SPACE TO ADVANCE TEXT]
   - I stream under the name <color=#a7f>Paranormie</color>.
   - On my channel, I'm a bit of an urban explorer. I check out old abandoned places
     to see what they're like.
-  - I'm in a pretty tough spot money wise.
-  - Lucky for me, I got a pretty promising sponsor deal for this next stream.
-  - ...and I found the perfect spot for it!
+  - I'm in a pretty tough spot money wise.<br>Got quite a couple debts to pay.
+  - Lucky for me, I somehow managed to get a sponsor for this next stream of mine.
+  - Some crappy energy drink called <color=#7af>T-FUEL</color>. Nothing I'd ever
+    drink.
+  - But hey, they're paying my bills.
+  - ...and I found the perfect spot for the stream too!
   - It's an old abandoned shack out in the woods that's rumored to have some weird
     stuff going on in it's basement.
   - That said, the sponsors are expecting this stream to be a success, otherwise
     they're pulling out.
-  - This stream needs to be a hit.
-  - ...otherwise I'm kinda screwed.
+  - Basically, this stream needs to be a hit.
+  - ...otherwise I'm kinda <color=#f77>screwed</color>.
   - ...
   - Well, I'm pulling up to the place now.
   - Let's just hope I can keep my viewers hooked.
-  moods: 02000000000000000200000003000000000000000100000000000000020000000300000004000000020000000200000000000000
+  - Going live in three...
+  - two...
+  - <size=200%><color=#f77>Don't bore them.
+  moods: 020000000000000002000000030000000000000003000000000000000100000000000000020000000300000004000000050000000200000000000000020000000300000005000000
   dialogueSounds:
   - {fileID: 8300000, guid: 8d7a96eff4be40b4393425a96c60c227, type: 3}
   - {fileID: 8300000, guid: 6e04907ad980d9b4cb8035766bc59718, type: 3}
   - {fileID: 8300000, guid: 89de0030daf35a44d87d1551bd92ca54, type: 3}
   - {fileID: 8300000, guid: 3356b57b528e91a44a49be3e46104011, type: 3}
   - {fileID: 8300000, guid: b4158d513cb84374997b36be141e86cc, type: 3}
+  - {fileID: 8300000, guid: 58021013854893842af9505c259c266e, type: 3}
+  staticNoise: {fileID: 8300000, guid: 109b398dff7a0064b8a944de9110cf50, type: 3}
 --- !u!1 &1990141116
 GameObject:
   m_ObjectHideFlags: 0
@@ -971,7 +1141,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1955772429}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}

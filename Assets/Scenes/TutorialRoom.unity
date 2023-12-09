@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: b7dba331d3098d1459d7439009575c04, type: 2}
   m_LightingSettings: {fileID: 0}
 --- !u!196 &4
 NavMeshSettings:
@@ -123,6 +123,110 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &6722760
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6956201757947515252, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
+      propertyPath: m_RootOrder
+      value: 21
+      objectReference: {fileID: 0}
+    - target: {fileID: 6956201757947515252, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3.56
+      objectReference: {fileID: 0}
+    - target: {fileID: 6956201757947515252, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3.12
+      objectReference: {fileID: 0}
+    - target: {fileID: 6956201757947515252, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 3.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6956201757947515252, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.247
+      objectReference: {fileID: 0}
+    - target: {fileID: 6956201757947515252, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.647
+      objectReference: {fileID: 0}
+    - target: {fileID: 6956201757947515252, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 5.016
+      objectReference: {fileID: 0}
+    - target: {fileID: 6956201757947515252, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6956201757947515252, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6956201757947515252, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6956201757947515252, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6956201757947515252, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6956201757947515252, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6956201757947515252, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6956201757947515272, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
+      propertyPath: mood
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6956201757947515272, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
+      propertyPath: message
+      value: Hello, everyone; you're watching <color=#7af>Paranormie</color>! How's
+        everyone doing tonight? We've got an interesting location some of y'all told
+        me about, so let's see if it lives up to the hype!
+      objectReference: {fileID: 0}
+    - target: {fileID: 6956201757947515272, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
+      propertyPath: repeatTag
+      value: FirstDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 6956201757947515275, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
+      propertyPath: m_Name
+      value: Dialogue Cube (5)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
+--- !u!1 &6722761 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6956201757947515275, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
+  m_PrefabInstance: {fileID: 6722760}
+  m_PrefabAsset: {fileID: 0}
+--- !u!54 &6722762
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6722761}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &88958096
 GameObject:
   m_ObjectHideFlags: 0
@@ -752,9 +856,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6956201757947515272, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
       propertyPath: message
-      value: I've heard rumors of strange things in this abandoned place's basement.
-        I'll probably have to find a <color=#fa7>key</color> to make my way down
-        there.
+      value: So, chat, a lot of you were telling me there were some rumors of strange
+        things in this abandoned place's basement. I'll probably have to find a <color=#fa7>key</color>
+        to make my way down there.
       objectReference: {fileID: 0}
     - target: {fileID: 6956201757947515272, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
       propertyPath: repeatTag
@@ -3258,43 +3362,43 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2f9441481d3214d479b7d4bbc8123cc5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.962
+      value: 2.055
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2f9441481d3214d479b7d4bbc8123cc5, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.521
+      value: 1.546
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2f9441481d3214d479b7d4bbc8123cc5, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -4.667
+      value: -4.976
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2f9441481d3214d479b7d4bbc8123cc5, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.7834653
+      value: 0.50430435
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2f9441481d3214d479b7d4bbc8123cc5, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.02093247
+      value: -0.5776793
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2f9441481d3214d479b7d4bbc8123cc5, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.6206493
+      value: -0.49352652
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2f9441481d3214d479b7d4bbc8123cc5, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.023204647
+      value: -0.4103601
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2f9441481d3214d479b7d4bbc8123cc5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: -0.229
+      value: -81.004
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2f9441481d3214d479b7d4bbc8123cc5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -76.779
+      value: -171.296
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2f9441481d3214d479b7d4bbc8123cc5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 3.574
+      value: 91.546
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 2f9441481d3214d479b7d4bbc8123cc5, type: 3}
       propertyPath: m_Name
@@ -3333,8 +3437,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.53672296, y: 0.27245343, z: 0.66487026}
-  m_Center: {x: 0.006975323, y: 0.05375558, z: 0.054277092}
+  m_Size: {x: 0.53672296, y: 0.27245343, z: 0.35}
+  m_Center: {x: 0.006975323, y: -0.07, z: 0.054277092}
 --- !u!1 &1024736805 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -5824380845488361162, guid: 04814c19f08b14243b1470863772e3f7, type: 3}
@@ -4612,9 +4716,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6956201757947515272, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
       propertyPath: message
-      value: I've heard rumors of strange things in this abandoned place's basement.
-        I'll probably have to find a <color=#fa7>key</color> to make my way down
-        there.
+      value: So, chat, a lot of you were telling me there were some rumors of strange
+        things in this abandoned place's basement. I'll probably have to find a <color=#fa7>key</color>
+        to make my way down there.
       objectReference: {fileID: 0}
     - target: {fileID: 6956201757947515272, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
       propertyPath: repeatTag
@@ -5881,9 +5985,17 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3893069812218952726, guid: 794ab45a7023ef84998697f84ead645c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4874769628769274146, guid: 794ab45a7023ef84998697f84ead645c, type: 3}
       propertyPath: m_Name
       value: Renderer
+      objectReference: {fileID: 0}
+    - target: {fileID: 7280503727352505138, guid: 794ab45a7023ef84998697f84ead645c, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9217624893764564120, guid: 794ab45a7023ef84998697f84ead645c, type: 3}
       propertyPath: m_RootOrder

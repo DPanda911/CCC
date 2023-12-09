@@ -23,7 +23,7 @@ public class InventoryManager : MonoBehaviour
         {
             inventoryItems.Add(item);
         }
-
+        GameManager.instance.AudienceWoo(0, 0.00075f);
         UpdateUI();
     }
 
@@ -33,7 +33,13 @@ public class InventoryManager : MonoBehaviour
         {
             inventoryItems.Remove(item);
         }
+        GameManager.instance.AudienceWoo(0, -0.00075f);
         UpdateUI();
+    }
+
+    public bool HasItem(AllItems item)
+    {
+        return inventoryItems.Contains(item);
     }
 
     public List<int> GetInventoryAsInt()

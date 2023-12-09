@@ -28,6 +28,7 @@ public class Fader : MonoBehaviour
                 alpha -= 2.5f * Time.deltaTime;
             }
             if (leaving && (alpha < 1)) {
+                img.enabled = true;
                 alpha += 3f * Time.deltaTime;
                 cam.fieldOfView -= Time.deltaTime * 25f;
             }

@@ -48,7 +48,6 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-        viewerCountInt = Mathf.CeilToInt(viewerCount);
 
         viewerCount += vc_rate;
         vc_rate += vc_grav;
@@ -57,6 +56,9 @@ public class GameManager : MonoBehaviour
 
         if (Time.time > (timeSinceLastUpdate + 2.0f))
         {
+            if (viewerCount <= 0) {
+                SceneManager.LoadScene("NoMoreViewers");
+            }
             timeSinceLastUpdate = Time.time;
             UpdateViewerCount();
         }
@@ -71,7 +73,14 @@ public class GameManager : MonoBehaviour
         textObj = GameObject.Find("ViewCount").GetComponent<TextMeshProUGUI>();
         if (textObj != null)
         {
-            textObj.text = viewerCountInt.ToString("#,##0");
+            viewerCountInt = Mathf.CeilToInt(viewerCount);
+            int bweg = Mathf.Max(viewerCountInt, 0);
+            textObj.text = bweg.ToString("#,##0");
+        }
+        UIPhone pUI;
+        pUI = GameObject.Find("Phone UI").GetComponent<UIPhone>();
+        if (pUI != null) {
+            pUI.UpdatedVC(viewerCountInt);
         }
     }
 
@@ -132,6 +141,12 @@ public class GameManager : MonoBehaviour
             AudienceWoo(0, 0.1f);
         }
         return battery;
+    }
+
+    public void RechargeBattery()
+    {
+        battery += 0.85f;
+        battery = Mathf.Clamp(battery, 0f, 1f);
     }
 
     public void DialogueMessage(string message, string tag = null, int mood = 0)

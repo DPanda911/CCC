@@ -12,6 +12,9 @@ public class UIPhone : MonoBehaviour
     [SerializeField] private Image batteryImg;
     [SerializeField] private Image deadBatteryImg;
 
+    [SerializeField] private Image viewerImg;
+    [SerializeField] private Sprite[] viewerTiers;
+
     [Header("Sprites")]
     [SerializeField] private Sprite s_battery_full;
     [SerializeField] private Sprite s_battery_mid;
@@ -20,6 +23,7 @@ public class UIPhone : MonoBehaviour
     Interactor intr;
 
     GameManager gm;
+    InventoryManager im;
 
     private bool hasPanicked = false;
 
@@ -28,6 +32,9 @@ public class UIPhone : MonoBehaviour
     [Space]
     AudioSource src;
     [SerializeField] private AudioClip deadBeep;
+    [SerializeField] private AudioClip chargeSound;
+    [SerializeField] private AudioClip phoneImpactSound;
+    [SerializeField] InventoryManager.AllItems chargerItem;
     private bool hasBeeped = false;
     // Start is called before the first frame update
     void Start()
@@ -36,12 +43,13 @@ public class UIPhone : MonoBehaviour
 
         intr = GameObject.Find("Main Camera").GetComponent<Interactor>();
         gm = GameObject.Find("GameManager").GetComponent<GameManager>();
+        im = GameObject.Find("GameManager").GetComponent<InventoryManager>();
 
         src = gameObject.AddComponent<AudioSource>();
 
         src.playOnAwake = false;
-        src.volume = 0.5f;
-        src.spatialBlend = 1f;
+        src.volume = .8f;
+        src.spatialBlend = .1f;
         src.dopplerLevel = 0f;
         src.minDistance = 11.25f;
         src.maxDistance = 50f;
@@ -62,6 +70,13 @@ public class UIPhone : MonoBehaviour
             PlayAnimation("Phone_Rest");
             intr.canInteract = true;
             gm.DialogueMessage("It's important I check on that often. If my viewer count hits zero, I'll have no choice but to <color=#f77>stop the stream</color>.", "ViewCountExplanation", 3);
+        }
+        if (Input.GetKeyDown(KeyCode.R) && intr.canInteract && im.HasItem(chargerItem))
+        {
+            PlayAnimation("Phone_Charge");
+            im.RemoveItem(chargerItem);
+            canPhone = false;
+            intr.canInteract = false;
         }
 
         if ((curState == "Phone_Lift") && !hasPanicked && (gm.GetBattery() <= 0)) {
@@ -92,6 +107,7 @@ public class UIPhone : MonoBehaviour
                 deadBatteryImg.color = new Color(1f, 1f, 1f, 1f);
                 if (!hasBeeped && (curState == "Phone_Lift")) {
                     hasBeeped = true;
+                    src.clip = deadBeep;
                     src.Play();
                 }
             } else {
@@ -112,6 +128,37 @@ public class UIPhone : MonoBehaviour
 
     private IEnumerator ImOutOfBattery() {
         yield return new WaitForSeconds(.35f);
-        gm.DialogueMessage("Oh crap, out of battery?!? I'M <color=#f77>NOT BROADCASTING</color>! My viewer count is probably plummeting! I need to find myself a <color=#fa7>battery pack</color> or something, and FAST!", "WaitImOutOfBattery", 4);
+        gm.DialogueMessage("Oh crap, out of battery?!? I'M <color=#f77>NOT BROADCASTING</color>! My viewer count is probably plummeting! Why didn't I bring my own <color=#fa7>battery pack</color>?!?", "WaitImOutOfBattery", 4);
+    }
+
+    private void PhoneImpact() {
+        src.clip = phoneImpactSound;
+        src.Play();
+        gm.AudienceWoo(0, 0.0015f);
+    }
+
+    private void BatteryPackCharge() {
+        gm.RechargeBattery();
+        src.clip = chargeSound;
+        src.Play();
+    }
+
+    private void EndCharge() {
+        intr.canInteract = true;
+        canPhone = true;
+    }
+
+    public void UpdatedVC(int viewerCount) {
+        if (viewerCount >= 100) {
+            viewerImg.sprite = viewerTiers[0];
+        } else if (viewerCount >= 75) {
+            viewerImg.sprite = viewerTiers[1];
+        } else if (viewerCount >= 50) {
+            viewerImg.sprite = viewerTiers[2];
+        } else if (viewerCount >= 25) {
+            viewerImg.sprite = viewerTiers[3];
+        } else {
+            viewerImg.sprite = viewerTiers[4];
+        }
     }
 }

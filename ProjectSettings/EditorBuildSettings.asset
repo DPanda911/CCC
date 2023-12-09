@@ -41,4 +41,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/WinScene.unity
     guid: e3c1e58f3c4f8134b839d2c89b115b3d
+  - enabled: 1
+    path: Assets/Scenes/IntroScene.unity
+    guid: 870224abc4f45544587003477cc60b1e
+  - enabled: 1
+    path: Assets/Scenes/TutorialRoom.unity
+    guid: 90108ee02bd2b95428747d3b519e659a
+  - enabled: 1
+    path: Assets/Scenes/BeastLair.unity
+    guid: f92de18d1b0a8bf4faca3cba45836240
+  - enabled: 1
+    path: Assets/Scenes/NoMoreViewers.unity
+    guid: c305d833a321d0b409796ee8bbe9abdb
   m_configObjects: {}
