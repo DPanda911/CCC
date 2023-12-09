@@ -160,9 +160,6 @@ MonoBehaviour:
   requiresMultipleItems: 0
   isDoorLocked: 0
   requiredItem: 0
-  requiredItem2: 0
-  requiredItem3: 0
-  requiredItem4: 0
 --- !u!1 &84866328 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -2006677561848808045, guid: da5193fb14de71a469131a295cfe63f5, type: 3}
@@ -386,9 +383,6 @@ MonoBehaviour:
   requiresMultipleItems: 1
   isDoorLocked: 0
   requiredItem: 5
-  requiredItem2: 6
-  requiredItem3: 3
-  requiredItem4: 8
 --- !u!65 &413607457
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -457,9 +451,6 @@ MonoBehaviour:
   requiresMultipleItems: 0
   isDoorLocked: 0
   requiredItem: 0
-  requiredItem2: 0
-  requiredItem3: 0
-  requiredItem4: 0
 --- !u!1001 &523259944
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1286,9 +1277,6 @@ MonoBehaviour:
   requiresMultipleItems: 0
   isDoorLocked: 0
   requiredItem: 0
-  requiredItem2: 0
-  requiredItem3: 0
-  requiredItem4: 0
 --- !u!1 &1276354950 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5998109814200457598, guid: da5193fb14de71a469131a295cfe63f5, type: 3}
@@ -1380,9 +1368,6 @@ MonoBehaviour:
   requiresMultipleItems: 0
   isDoorLocked: 0
   requiredItem: 0
-  requiredItem2: 0
-  requiredItem3: 0
-  requiredItem4: 0
 --- !u!1 &1364484201 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -6368614790236905388, guid: da5193fb14de71a469131a295cfe63f5, type: 3}
