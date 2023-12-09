@@ -27,6 +27,10 @@ public class GameManager : MonoBehaviour
     [SerializeField] private float vc_rate = 0.01f;
     [SerializeField] private float vc_grav = -0.000004f;
 
+    [SerializeField] private float averageViewCount = 0;
+    private int averageVCChecks = 0;
+    [SerializeField] private int peakViewCount = 0;
+
     [Header("Save Tags")]
     [SerializeField] private List<string> visitedRooms = new List<string>();
     [SerializeField] private List<string> dialogueTags = new List<string>();
@@ -82,6 +86,16 @@ public class GameManager : MonoBehaviour
         if (pUI != null) {
             pUI.UpdatedVC(viewerCountInt);
         }
+
+        if (averageVCChecks > 0) {
+            averageViewCount = (viewerCountInt + (averageViewCount * averageVCChecks)) / (averageVCChecks + 1);
+        } else {
+            averageViewCount = viewerCountInt;
+        }
+        averageVCChecks++;
+        peakViewCount = Mathf.Max(viewerCountInt, peakViewCount);
+        Debug.Log(averageViewCount);
+        Debug.Log(peakViewCount);
     }
 
     public void SetSpawnPos(Vector3 newSpawn, float newOrient)

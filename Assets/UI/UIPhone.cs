@@ -149,7 +149,9 @@ public class UIPhone : MonoBehaviour
     }
 
     public void UpdatedVC(int viewerCount) {
-        if (viewerCount >= 100) {
+        if (viewerCount >= 300) {
+            viewerImg.sprite = viewerTiers[5];
+        } else if (viewerCount >= 100) {
             viewerImg.sprite = viewerTiers[0];
         } else if (viewerCount >= 75) {
             viewerImg.sprite = viewerTiers[1];
