@@ -5,12 +5,16 @@ using UnityEngine;
 public class CheckRotationBool : MonoBehaviour
 {
     public GameObject prefab;
-    public bool check = false;
+    
     public bool check2 = false;
     public string tag;
     public int amountOfObj;
-   
+    public bool check;
+
+    public GameObject boo;
     
+
+
     void Start()
     {
 
@@ -23,13 +27,15 @@ public class CheckRotationBool : MonoBehaviour
         {
             checkRotationBool();
         }
-        else if (check2 && !check)
+        if (check2 && !GetComponent<CheckPosBool>().check)
         {
             GetComponent<CheckPosBool>().checkPosBool();
-            check = true; 
+
+            Debug.Log("Bitch what?");
 
         }
-        
+
+
 
     }
 

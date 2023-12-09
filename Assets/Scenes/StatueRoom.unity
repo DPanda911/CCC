@@ -2861,6 +2861,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -1.765
       objectReference: {fileID: 0}
+    - target: {fileID: -4574399497565488583, guid: f11f300c8bc23834193d57b1c2bda96d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: -4476481078979007024, guid: f11f300c8bc23834193d57b1c2bda96d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -6.042
@@ -2889,6 +2893,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 0.3018868
       objectReference: {fileID: 0}
+    - target: {fileID: -2664165887797407253, guid: f11f300c8bc23834193d57b1c2bda96d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: f11f300c8bc23834193d57b1c2bda96d, type: 3}
       propertyPath: m_Name
       value: statue room 1
@@ -2901,11 +2909,19 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: c56ca5878f3600f49a47efe700f601ed, type: 2}
+    - target: {fileID: 1256769943623975504, guid: f11f300c8bc23834193d57b1c2bda96d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1418097408302940385, guid: f11f300c8bc23834193d57b1c2bda96d, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1621571386409941205, guid: f11f300c8bc23834193d57b1c2bda96d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2559213542217946387, guid: f11f300c8bc23834193d57b1c2bda96d, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
