@@ -104,9 +104,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71c1514a6bd24e1e882cebbe1904ce04, type: 3}
   m_Name: 04B_03_
   m_EditorClassIdentifier: 
-  hashCode: 0
+  hashCode: 220163909
   material: {fileID: -3525228908174661564}
-  materialHashCode: 0
+  materialHashCode: -3435195
   m_Version: 1.1.0
   m_SourceFontFileGUID: 8195dd93fc935bb44ad77592a7d85360
   m_SourceFontFile_EditorRef: {fileID: 12800000, guid: 8195dd93fc935bb44ad77592a7d85360, type: 3}

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class RendAndUI : MonoBehaviour
 {
@@ -26,11 +27,18 @@ public class RendAndUI : MonoBehaviour
     [SerializeField] private GameObject slotPrefab;
     [SerializeField] private GameObject itemListObject;
     [SerializeField] private List<Sprite> itemImages = new List<Sprite>(); 
+    [Space]
+    [SerializeField] private GameObject messagePrefab;
 
     [Header("Internal Stuff")]
     [SerializeField] private List<GameObject> inventorySlots = new List<GameObject>();
 
     InventoryManager im;
+
+    [Header("Sounds")]
+    [SerializeField] private AudioClip[] dialogueSounds;
+
+    private AudioSource src;
 
     // Start is called before the first frame update
     void Start()
@@ -38,6 +46,10 @@ public class RendAndUI : MonoBehaviour
         im = GameObject.Find("GameManager").GetComponent<InventoryManager>();
 
         RefreshInventoryUI();
+
+        src = gameObject.AddComponent<AudioSource>();
+        src.playOnAwake = false;
+        src.spatialBlend = 0f;
     }
 
     // Update is called once per frame
@@ -64,5 +76,31 @@ public class RendAndUI : MonoBehaviour
             newSlot.transform.localPosition = new Vector3(0, 0, 0);
             inventorySlots.Add(newSlot);
         }
+    }
+
+    public void SpawnDialogue(string message, int mood) {
+        Transform peskyCurrentMessage = gameObject.transform.Find("Canvas/UI Message(Clone)");
+        if (peskyCurrentMessage != null)
+        {
+            Destroy(peskyCurrentMessage.gameObject);
+        }
+
+        GameObject newMessage = Instantiate(messagePrefab);
+        TMP_Text msgText = newMessage.GetComponent<TextMeshProUGUI>();
+        msgText.text = message;
+        newMessage.transform.SetParent(gameObject.transform.Find("Canvas"));
+        newMessage.transform.SetSiblingIndex(1);
+
+        
+        int pick;
+        if ((mood < 0) || (mood > dialogueSounds.Length - 1)) {
+            pick = 0;
+            Debug.LogWarning("Dialogue Mood [" + mood + "] doesn't exist. Your mood should be between 0-" + (dialogueSounds.Length - 1));
+        } else {
+            pick = mood;
+        }
+        src.clip = dialogueSounds[pick];
+        src.pitch = Random.Range(0.97f, 1.03f);
+        src.Play();
     }
 }

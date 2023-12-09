@@ -583,7 +583,14 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 7805b70b95f64a4429421d2e7dc48f9d, type: 3}
   - {fileID: 21300000, guid: e889641b7922a8d448e51bef4d2a0a96, type: 3}
   - {fileID: 21300000, guid: 3e267ba2a4bfaee4ab58db2e5854f11e, type: 3}
+  messagePrefab: {fileID: 8615194237669050945, guid: 4239db72f0180c643bf8cb2ade3199fd, type: 3}
   inventorySlots: []
+  dialogueSounds:
+  - {fileID: 8300000, guid: 8d7a96eff4be40b4393425a96c60c227, type: 3}
+  - {fileID: 8300000, guid: 6e04907ad980d9b4cb8035766bc59718, type: 3}
+  - {fileID: 8300000, guid: 89de0030daf35a44d87d1551bd92ca54, type: 3}
+  - {fileID: 8300000, guid: 3356b57b528e91a44a49be3e46104011, type: 3}
+  - {fileID: 8300000, guid: b4158d513cb84374997b36be141e86cc, type: 3}
 --- !u!1 &5636122461658009644
 GameObject:
   m_ObjectHideFlags: 0
