@@ -972,14 +972,15 @@ MonoBehaviour:
   - {fileID: 21300000, guid: d5b855c1a823395478b94e8542286bd7, type: 3}
   - {fileID: 21300000, guid: 633416ce1aafc4248aa557167fe67ee9, type: 3}
   dialogues:
-  - My name is Nelle. Nelle Norman.<br><alpha=#22>[SPACE TO ADVANCE TEXT]
-  - I stream under the name <color=#a7f>Paranormie</color>.
-  - On my channel, I'm a bit of an urban explorer. I check out old abandoned places
-    to see what they're like.
+  - Hi. My name's Nelle. Nelle Norman.<br><alpha=#22>[SPACE TO ADVANCE TEXT]
+  - That said, you probably recognize the name <color=#a7f>Paranormie</color> better.<br>It's
+    my witch.tv channel.
+  - On my channel, I'm a bit of an urban explorer. I stream myself exploring old
+    abandoned places to see what they're like or what weird things I can find.
   - I'm in a pretty tough spot money wise.<br>Got quite a couple debts to pay.
   - Lucky for me, I somehow managed to get a sponsor for this next stream of mine.
-  - Some crappy energy drink called <color=#7af>T-FUEL</color>. Nothing I'd ever
-    drink.
+  - Some crappy energy drink called <color=#7cf>T-FUEL</color>. <br>Nothing I'd ever
+    drink<cspace=-0.25em>--</cspace>I'm more of a coffee person myself.
   - But hey, they're paying my bills.
   - ...and I found the perfect spot for the stream too!
   - It's an old abandoned shack out in the woods that's rumored to have some weird
@@ -991,10 +992,11 @@ MonoBehaviour:
   - ...
   - Well, I'm pulling up to the place now.
   - Let's just hope I can keep my viewers hooked.
+  - Alright. Here we go.
   - Going live in three...
   - two...
   - <size=200%><color=#f77>Don't bore them.
-  moods: 020000000000000002000000030000000000000003000000000000000100000000000000020000000300000004000000050000000200000000000000020000000300000005000000
+  moods: 02000000000000000200000003000000000000000300000000000000010000000000000002000000030000000400000005000000020000000000000003000000020000000300000005000000
   dialogueSounds:
   - {fileID: 8300000, guid: 8d7a96eff4be40b4393425a96c60c227, type: 3}
   - {fileID: 8300000, guid: 6e04907ad980d9b4cb8035766bc59718, type: 3}

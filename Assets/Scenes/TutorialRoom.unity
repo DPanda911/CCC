@@ -192,7 +192,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6956201757947515272, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
       propertyPath: message
-      value: Hello, everyone; you're watching <color=#7af>Paranormie</color>! How's
+      value: Hello, everyone! You're watching <color=#7af>Paranormie</color>! How's
         everyone doing tonight? We've got an interesting location some of y'all told
         me about, so let's see if it lives up to the hype!
       objectReference: {fileID: 0}
