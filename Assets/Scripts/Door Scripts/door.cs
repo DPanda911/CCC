@@ -10,6 +10,7 @@ public class door : MonoBehaviour, IInteractable
     public Vector3 playerPosition;
     public float playerRotation;
     public bool requiresItem;
+    public bool requiresMultipleItems;
     public bool isDoorLocked;
 
     GameManager gm;
@@ -19,6 +20,9 @@ public class door : MonoBehaviour, IInteractable
     private IEnumerator crt;
 
     [SerializeField] InventoryManager.AllItems requiredItem;
+    [SerializeField] InventoryManager.AllItems requiredItem2;
+    [SerializeField] InventoryManager.AllItems requiredItem3;
+    [SerializeField] InventoryManager.AllItems requiredItem4;
 
     void Start()
     {
@@ -50,6 +54,19 @@ public class door : MonoBehaviour, IInteractable
                 }
             }
         }
+        else if (requiresMultipleItems)
+        {
+            if(hasRequiredItems(requiredItem, requiredItem2, requiredItem3, requiredItem4))
+            {
+                Debug.Log("itemHadAndDoorLoced");
+                if (!isDoorLocked)
+                {
+                    Debug.Log("Hi");
+
+                    StartCoroutine(crt);
+                }
+            }
+        }
         else
         {
             Debug.Log("doesntRequireItem");
@@ -65,6 +82,18 @@ public class door : MonoBehaviour, IInteractable
     public bool hasRequiredItem(InventoryManager.AllItems itemRequired)
     {
         if (InventoryManager.Instance.inventoryItems.Contains(itemRequired)){
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
+    public bool hasRequiredItems(InventoryManager.AllItems itemRequired, InventoryManager.AllItems itemRequired2, InventoryManager.AllItems itemRequired3, InventoryManager.AllItems itemRequired4)
+    {
+        if (InventoryManager.Instance.inventoryItems.Contains(itemRequired) && InventoryManager.Instance.inventoryItems.Contains(itemRequired2) && InventoryManager.Instance.inventoryItems.Contains(itemRequired3) && InventoryManager.Instance.inventoryItems.Contains(itemRequired4))
+        {
             return true;
         }
         else
