@@ -33,7 +33,7 @@ public class CandlePickup : MonoBehaviour, IInteractable
     public void Interact()
     {
 
-        InventoryManager.Instance.AddItem(itemType);
+        //InventoryManager.Instance.AddItem(itemType);
         Debug.Log("HI");
         if (isActive)
         {

@@ -146,6 +146,7 @@ public class UIPhone : MonoBehaviour
     private void EndCharge() {
         intr.canInteract = true;
         canPhone = true;
+        PlayAnimation("Phone_Start");
     }
 
     public void UpdatedVC(int viewerCount) {

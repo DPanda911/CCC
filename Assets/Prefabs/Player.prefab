@@ -812,6 +812,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraPosition: {fileID: 5487180591078935685}
+  bobAmount: 0.0075
+  bobRate: 4
+  playerBody: {fileID: 5487180591593819366}
 --- !u!1 &5487180591078935690
 GameObject:
   m_ObjectHideFlags: 0
