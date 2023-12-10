@@ -328,8 +328,15 @@ MonoBehaviour:
   playerPosition: {x: 0, y: 0, z: 0}
   playerRotation: 0
   requiresItem: 0
+  requiresMultipleItems: 0
   isDoorLocked: 0
   requiredItem: 0
+  requiredItem2: 0
+  requiredItem3: 0
+  requiredItem4: 0
+  failMessage: It won't budge.
+  failMood: 2
+  openSound: {fileID: 0}
 --- !u!65 &397118291
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -364,8 +371,15 @@ MonoBehaviour:
   playerPosition: {x: -7.5, y: -0.5, z: -0.25}
   playerRotation: 90
   requiresItem: 0
+  requiresMultipleItems: 0
   isDoorLocked: 0
   requiredItem: 0
+  requiredItem2: 0
+  requiredItem3: 0
+  requiredItem4: 0
+  failMessage: It won't budge.
+  failMood: 2
+  openSound: {fileID: 8300000, guid: a43171f9c371a2c468ab95d52c51053e, type: 3}
 --- !u!65 &505271442
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -534,8 +548,15 @@ MonoBehaviour:
   playerPosition: {x: -7.5, y: -0.5, z: -0.25}
   playerRotation: 90
   requiresItem: 0
+  requiresMultipleItems: 0
   isDoorLocked: 0
   requiredItem: 0
+  requiredItem2: 0
+  requiredItem3: 0
+  requiredItem4: 0
+  failMessage: It won't budge.
+  failMood: 2
+  openSound: {fileID: 8300000, guid: a43171f9c371a2c468ab95d52c51053e, type: 3}
 --- !u!65 &717090036
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -639,8 +660,15 @@ MonoBehaviour:
   playerPosition: {x: 0, y: 0, z: 0}
   playerRotation: 0
   requiresItem: 0
+  requiresMultipleItems: 0
   isDoorLocked: 0
   requiredItem: 0
+  requiredItem2: 0
+  requiredItem3: 0
+  requiredItem4: 0
+  failMessage: It won't budge.
+  failMood: 2
+  openSound: {fileID: 0}
 --- !u!65 &745908015
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -744,8 +772,15 @@ MonoBehaviour:
   playerPosition: {x: 0, y: 0, z: 0}
   playerRotation: 0
   requiresItem: 0
+  requiresMultipleItems: 0
   isDoorLocked: 0
   requiredItem: 0
+  requiredItem2: 0
+  requiredItem3: 0
+  requiredItem4: 0
+  failMessage: It won't budge.
+  failMood: 2
+  openSound: {fileID: 0}
 --- !u!65 &768158086
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6053,8 +6088,15 @@ MonoBehaviour:
   playerPosition: {x: 0, y: 0, z: 0}
   playerRotation: 0
   requiresItem: 0
+  requiresMultipleItems: 0
   isDoorLocked: 0
   requiredItem: 0
+  requiredItem2: 0
+  requiredItem3: 0
+  requiredItem4: 0
+  failMessage: It won't budge.
+  failMood: 2
+  openSound: {fileID: 0}
 --- !u!65 &1217661583
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6158,8 +6200,15 @@ MonoBehaviour:
   playerPosition: {x: -7.5, y: -0.5, z: -0.25}
   playerRotation: 90
   requiresItem: 0
+  requiresMultipleItems: 0
   isDoorLocked: 0
   requiredItem: 0
+  requiredItem2: 0
+  requiredItem3: 0
+  requiredItem4: 0
+  failMessage: It won't budge.
+  failMood: 2
+  openSound: {fileID: 8300000, guid: a43171f9c371a2c468ab95d52c51053e, type: 3}
 --- !u!1 &1431032340 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -3386553121241536846, guid: d4bce44d0b252e543b92eee9281c7f42, type: 3}
@@ -6194,8 +6243,15 @@ MonoBehaviour:
   playerPosition: {x: 0.05, y: 0.5, z: 6.5}
   playerRotation: 180
   requiresItem: 0
+  requiresMultipleItems: 0
   isDoorLocked: 0
   requiredItem: 0
+  requiredItem2: 0
+  requiredItem3: 0
+  requiredItem4: 0
+  failMessage: It won't budge.
+  failMood: 2
+  openSound: {fileID: 8300000, guid: a43171f9c371a2c468ab95d52c51053e, type: 3}
 --- !u!1 &1450258467
 GameObject:
   m_ObjectHideFlags: 0
@@ -6541,8 +6597,15 @@ MonoBehaviour:
   playerPosition: {x: -7.5, y: -0.5, z: -0.25}
   playerRotation: 90
   requiresItem: 0
+  requiresMultipleItems: 0
   isDoorLocked: 0
   requiredItem: 0
+  requiredItem2: 0
+  requiredItem3: 0
+  requiredItem4: 0
+  failMessage: It won't budge.
+  failMood: 2
+  openSound: {fileID: 8300000, guid: a43171f9c371a2c468ab95d52c51053e, type: 3}
 --- !u!65 &1664868975
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6646,8 +6709,15 @@ MonoBehaviour:
   playerPosition: {x: 0, y: 0, z: 0}
   playerRotation: 0
   requiresItem: 0
+  requiresMultipleItems: 0
   isDoorLocked: 0
   requiredItem: 0
+  requiredItem2: 0
+  requiredItem3: 0
+  requiredItem4: 0
+  failMessage: It won't budge.
+  failMood: 2
+  openSound: {fileID: 0}
 --- !u!65 &1702490538
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6944,8 +7014,15 @@ MonoBehaviour:
   playerPosition: {x: -7.5, y: -0.5, z: -0.25}
   playerRotation: 90
   requiresItem: 0
+  requiresMultipleItems: 0
   isDoorLocked: 0
   requiredItem: 0
+  requiredItem2: 0
+  requiredItem3: 0
+  requiredItem4: 0
+  failMessage: It won't budge.
+  failMood: 2
+  openSound: {fileID: 8300000, guid: a43171f9c371a2c468ab95d52c51053e, type: 3}
 --- !u!65 &2011725714
 BoxCollider:
   m_ObjectHideFlags: 0

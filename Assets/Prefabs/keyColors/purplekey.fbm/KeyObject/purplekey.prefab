@@ -100,6 +100,13 @@ MonoBehaviour:
   itemType: 1
   candle: {fileID: 7428315853951265664}
   isActive: 1
+  useMessage: 1
+  pickupMessage: A <color=#f7f>purple key</color>! This should come in handy.
+  pickupTag: PurpleKeyGet
+  pickupMood: 1
+  useAudienceSway: 1
+  pickupVCAddition: 5
+  pickupRateAddition: 0.001
 --- !u!65 &3106737770679307281
 BoxCollider:
   m_ObjectHideFlags: 0

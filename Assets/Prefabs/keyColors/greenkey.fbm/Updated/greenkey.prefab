@@ -197,6 +197,14 @@ MonoBehaviour:
   itemType: 2
   candle: {fileID: 4262246432366396818}
   isActive: 1
+  useMessage: 1
+  pickupMessage: Looks like pushing those statues around got me this <color=#7f7>green
+    key</color>!
+  pickupTag: GreenKeyGet
+  pickupMood: 1
+  useAudienceSway: 1
+  pickupVCAddition: 5
+  pickupRateAddition: 0.001
 --- !u!1 &7622455009592731486
 GameObject:
   m_ObjectHideFlags: 0

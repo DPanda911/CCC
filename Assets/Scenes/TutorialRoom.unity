@@ -1851,8 +1851,15 @@ MonoBehaviour:
   playerPosition: {x: 2.3, y: 0.5, z: -7.01}
   playerRotation: 0
   requiresItem: 0
+  requiresMultipleItems: 0
   isDoorLocked: 0
   requiredItem: 0
+  requiredItem2: 0
+  requiredItem3: 0
+  requiredItem4: 0
+  failMessage: It won't budge.
+  failMood: 2
+  openSound: {fileID: 8300000, guid: a43171f9c371a2c468ab95d52c51053e, type: 3}
 --- !u!65 &577540761
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2946,8 +2953,15 @@ MonoBehaviour:
   playerPosition: {x: -5.92, y: 0.5, z: 0.469}
   playerRotation: 90
   requiresItem: 0
+  requiresMultipleItems: 0
   isDoorLocked: 0
   requiredItem: 0
+  requiredItem2: 0
+  requiredItem3: 0
+  requiredItem4: 0
+  failMessage: It won't budge.
+  failMood: 2
+  openSound: {fileID: 8300000, guid: a43171f9c371a2c468ab95d52c51053e, type: 3}
 --- !u!65 &873876544
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3426,6 +3440,13 @@ MonoBehaviour:
   itemType: 9
   candle: {fileID: 987467497}
   isActive: 1
+  useMessage: 0
+  pickupMessage: 
+  pickupTag: 
+  pickupMood: 0
+  useAudienceSway: 0
+  pickupVCAddition: 0
+  pickupRateAddition: 0
 --- !u!65 &987467501
 BoxCollider:
   m_ObjectHideFlags: 0

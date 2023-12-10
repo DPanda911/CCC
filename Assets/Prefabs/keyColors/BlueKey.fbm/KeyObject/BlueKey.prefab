@@ -113,3 +113,10 @@ MonoBehaviour:
   itemType: 0
   candle: {fileID: 5397351012068872314}
   isActive: 1
+  useMessage: 1
+  pickupMessage: Chat, I am so damn good at puzzles.
+  pickupTag: BlueKeyRemarkSmug
+  pickupMood: 2
+  useAudienceSway: 1
+  pickupVCAddition: 5
+  pickupRateAddition: 0.001

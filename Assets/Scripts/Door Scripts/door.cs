@@ -13,8 +13,6 @@ public class door : MonoBehaviour, IInteractable
     public bool requiresMultipleItems;
     public bool isDoorLocked;
 
-    public int itemRequiredCount = 0;
-
     GameManager gm;
     Interactor intrac;
     Fader fd;
@@ -22,8 +20,16 @@ public class door : MonoBehaviour, IInteractable
     private IEnumerator crt;
 
     [SerializeField] InventoryManager.AllItems requiredItem;
+    [SerializeField] InventoryManager.AllItems requiredItem2;
+    [SerializeField] InventoryManager.AllItems requiredItem3;
+    [SerializeField] InventoryManager.AllItems requiredItem4;
+
+    [Header("Open Fail Message")]
+    [TextArea][SerializeField] string failMessage = "It won't budge.";
+    [SerializeField] int failMood = 2;
     
-    
+    [Space]
+    [SerializeField] GameManager.SoundTypes openSound = GameManager.SoundTypes.BasicDoor;
 
     void Start()
     {
@@ -41,6 +47,7 @@ public class door : MonoBehaviour, IInteractable
 
     public void Interact()
     {
+        bool succeeded = false;
         if (requiresItem)
         {
             Debug.Log("requiresItem check");
@@ -52,10 +59,24 @@ public class door : MonoBehaviour, IInteractable
                     Debug.Log("Hi");
 
                     StartCoroutine(crt);
+                    succeeded = true;
                 }
             }
         }
-        
+        else if (requiresMultipleItems)
+        {
+            if(hasRequiredItems(requiredItem, requiredItem2, requiredItem3, requiredItem4))
+            {
+                Debug.Log("itemHadAndDoorLoced");
+                if (!isDoorLocked)
+                {
+                    Debug.Log("Hi");
+
+                    StartCoroutine(crt);
+                    succeeded = true;
+                }
+            }
+        }
         else
         {
             Debug.Log("doesntRequireItem");
@@ -63,7 +84,12 @@ public class door : MonoBehaviour, IInteractable
             {
                 Debug.Log("Hi");
                 StartCoroutine(crt);
+                    succeeded = true;
             }
+        }
+
+        if (!succeeded) {
+            gm.DialogueMessage(failMessage, null, failMood);
         }
 
     }
@@ -79,12 +105,23 @@ public class door : MonoBehaviour, IInteractable
         }
     }
 
-    
+    public bool hasRequiredItems(InventoryManager.AllItems itemRequired, InventoryManager.AllItems itemRequired2, InventoryManager.AllItems itemRequired3, InventoryManager.AllItems itemRequired4)
+    {
+        if (InventoryManager.Instance.inventoryItems.Contains(itemRequired) && InventoryManager.Instance.inventoryItems.Contains(itemRequired2) && InventoryManager.Instance.inventoryItems.Contains(itemRequired3) && InventoryManager.Instance.inventoryItems.Contains(itemRequired4))
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
 
     private IEnumerator GoInDoor()
     {
         gm.SetSpawnPos(playerPosition, playerRotation);
         gm.EZFreeze();
+        gm.PlaySound(openSound);
         intrac.canInteract = false;
         fd.leaving = true;
         yield return new WaitForSeconds(.35f);

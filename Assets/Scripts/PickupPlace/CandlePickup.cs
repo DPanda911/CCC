@@ -5,9 +5,20 @@ using UnityEngine;
 public class CandlePickup : MonoBehaviour, IInteractable
 {
     [SerializeField] InventoryManager.AllItems itemType;
-    // Start is called before the first frame update
     public GameObject candle;
     public bool isActive;
+
+    [Header("Pickup Message")]
+    [SerializeField] private bool useMessage;
+    [TextArea][SerializeField] private string pickupMessage;
+    [SerializeField] private string pickupTag;
+    [SerializeField] private int pickupMood;
+
+    [Header("Audience Sway")]
+    [SerializeField] private bool useAudienceSway;
+    [SerializeField] private float pickupVCAddition;
+    [SerializeField] private float pickupRateAddition;
+    // Start is called before the first frame update
     void Start()
     {
 
@@ -29,6 +40,12 @@ public class CandlePickup : MonoBehaviour, IInteractable
             InventoryManager.Instance.AddItem(itemType);
             candle.SetActive(false);
             Debug.Log("Hi");
+            if (useMessage) {
+                GameManager.instance.DialogueMessage(pickupMessage, pickupTag, pickupMood);
+            }
+            if (useAudienceSway) {
+                GameManager.instance.AudienceWoo(pickupVCAddition, pickupRateAddition);
+            }
         }
 
         if (!isActive)

@@ -36,6 +36,13 @@ public class GameManager : MonoBehaviour
     [SerializeField] private List<string> dialogueTags = new List<string>();
 
 
+    [Header("Sounds")]
+    [SerializeField] AudioClip[] basicDoorSounds;
+    [SerializeField] AudioClip bigDoorSound;
+    [SerializeField] AudioClip ladderSound;
+    AudioSource src;
+
+
     void Awake()
     {
         if (instance == null)
@@ -48,6 +55,11 @@ public class GameManager : MonoBehaviour
         }
         DontDestroyOnLoad(gameObject);
         timeSinceLastUpdate = Time.time;
+
+        src = gameObject.AddComponent<AudioSource>();
+        src.playOnAwake = false;
+        src.volume = 1f;
+        src.spatialBlend = 0f;
     }
 
     void Update()
@@ -176,6 +188,30 @@ public class GameManager : MonoBehaviour
         {
             rau.SpawnDialogue(message, mood);
         }
+    }
+
+    public void PlaySound(SoundTypes snd)
+    {
+        switch (snd)
+        {
+            case SoundTypes.BasicDoor:
+                int clipToUse = UnityEngine.Random.Range(0, basicDoorSounds.Length);
+                src.clip = basicDoorSounds[clipToUse];
+                break;
+            case SoundTypes.BigDoor:
+                src.clip = bigDoorSound;
+                break;
+            case SoundTypes.Ladder:
+                src.clip = ladderSound;
+                break;
+        }
+        src.Play();
+    }
+
+    public enum SoundTypes {
+        BasicDoor = 0,
+        BigDoor = 1,
+        Ladder = 2
     }
    
 

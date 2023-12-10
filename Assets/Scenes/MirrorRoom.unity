@@ -18562,6 +18562,14 @@ MonoBehaviour:
   itemType: 3
   candle: {fileID: 390226027}
   isActive: 1
+  useMessage: 1
+  pickupMessage: This <color=#fa7>orange key</color> should come in handy! Unfortunately,
+    I guess I have to walk alllll the way back...
+  pickupTag: OrangeKeyGet
+  pickupMood: 1
+  useAudienceSway: 1
+  pickupVCAddition: 5
+  pickupRateAddition: 0.001
 --- !u!1 &399346613
 GameObject:
   m_ObjectHideFlags: 0

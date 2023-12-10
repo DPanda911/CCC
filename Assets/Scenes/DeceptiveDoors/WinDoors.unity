@@ -321,8 +321,13 @@ MonoBehaviour:
   requiresItem: 0
   requiresMultipleItems: 0
   isDoorLocked: 0
-  itemRequiredCount: 0
   requiredItem: 0
+  requiredItem2: 0
+  requiredItem3: 0
+  requiredItem4: 0
+  failMessage: It won't budge.
+  failMood: 2
+  openSound: {fileID: 0}
 --- !u!65 &397118291
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -464,8 +469,13 @@ MonoBehaviour:
   requiresItem: 0
   requiresMultipleItems: 0
   isDoorLocked: 0
-  itemRequiredCount: 0
   requiredItem: 0
+  requiredItem2: 0
+  requiredItem3: 0
+  requiredItem4: 0
+  failMessage: It won't budge.
+  failMood: 2
+  openSound: {fileID: 8300000, guid: a43171f9c371a2c468ab95d52c51053e, type: 3}
 --- !u!65 &706154120
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -571,8 +581,13 @@ MonoBehaviour:
   requiresItem: 0
   requiresMultipleItems: 0
   isDoorLocked: 0
-  itemRequiredCount: 0
   requiredItem: 0
+  requiredItem2: 0
+  requiredItem3: 0
+  requiredItem4: 0
+  failMessage: It won't budge.
+  failMood: 2
+  openSound: {fileID: 0}
 --- !u!65 &745908015
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -678,8 +693,13 @@ MonoBehaviour:
   requiresItem: 0
   requiresMultipleItems: 0
   isDoorLocked: 0
-  itemRequiredCount: 0
   requiredItem: 0
+  requiredItem2: 0
+  requiredItem3: 0
+  requiredItem4: 0
+  failMessage: It won't budge.
+  failMood: 2
+  openSound: {fileID: 0}
 --- !u!65 &768158086
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10838,8 +10858,13 @@ MonoBehaviour:
   requiresItem: 0
   requiresMultipleItems: 0
   isDoorLocked: 0
-  itemRequiredCount: 0
   requiredItem: 0
+  requiredItem2: 0
+  requiredItem3: 0
+  requiredItem4: 0
+  failMessage: It won't budge.
+  failMood: 2
+  openSound: {fileID: 8300000, guid: a43171f9c371a2c468ab95d52c51053e, type: 3}
 --- !u!65 &1214723186
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10871,8 +10896,13 @@ MonoBehaviour:
   requiresItem: 0
   requiresMultipleItems: 0
   isDoorLocked: 0
-  itemRequiredCount: 0
   requiredItem: 0
+  requiredItem2: 0
+  requiredItem3: 0
+  requiredItem4: 0
+  failMessage: It won't budge.
+  failMood: 2
+  openSound: {fileID: 8300000, guid: a43171f9c371a2c468ab95d52c51053e, type: 3}
 --- !u!65 &1214723188
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10991,8 +11021,13 @@ MonoBehaviour:
   requiresItem: 0
   requiresMultipleItems: 0
   isDoorLocked: 0
-  itemRequiredCount: 0
   requiredItem: 0
+  requiredItem2: 0
+  requiredItem3: 0
+  requiredItem4: 0
+  failMessage: It won't budge.
+  failMood: 2
+  openSound: {fileID: 0}
 --- !u!65 &1217661583
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16235,8 +16270,13 @@ MonoBehaviour:
   requiresItem: 0
   requiresMultipleItems: 0
   isDoorLocked: 0
-  itemRequiredCount: 0
   requiredItem: 0
+  requiredItem2: 0
+  requiredItem3: 0
+  requiredItem4: 0
+  failMessage: It won't budge.
+  failMood: 2
+  openSound: {fileID: 0}
 --- !u!65 &1702490538
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16522,8 +16562,13 @@ MonoBehaviour:
   requiresItem: 0
   requiresMultipleItems: 0
   isDoorLocked: 0
-  itemRequiredCount: 0
   requiredItem: 0
+  requiredItem2: 0
+  requiredItem3: 0
+  requiredItem4: 0
+  failMessage: It won't budge.
+  failMood: 2
+  openSound: {fileID: 8300000, guid: a43171f9c371a2c468ab95d52c51053e, type: 3}
 --- !u!65 &1866954633
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16555,8 +16600,13 @@ MonoBehaviour:
   requiresItem: 0
   requiresMultipleItems: 0
   isDoorLocked: 0
-  itemRequiredCount: 0
   requiredItem: 0
+  requiredItem2: 0
+  requiredItem3: 0
+  requiredItem4: 0
+  failMessage: It won't budge.
+  failMood: 2
+  openSound: {fileID: 8300000, guid: a43171f9c371a2c468ab95d52c51053e, type: 3}
 --- !u!65 &1919902078
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16588,8 +16638,13 @@ MonoBehaviour:
   requiresItem: 0
   requiresMultipleItems: 0
   isDoorLocked: 0
-  itemRequiredCount: 0
   requiredItem: 0
+  requiredItem2: 0
+  requiredItem3: 0
+  requiredItem4: 0
+  failMessage: It won't budge.
+  failMood: 2
+  openSound: {fileID: 8300000, guid: a43171f9c371a2c468ab95d52c51053e, type: 3}
 --- !u!65 &1971999910
 BoxCollider:
   m_ObjectHideFlags: 0

@@ -113,3 +113,13 @@ MonoBehaviour:
   sceneLoad: 
   playerPosition: {x: 0, y: 0, z: 0}
   playerRotation: 0
+  requiresItem: 0
+  requiresMultipleItems: 0
+  isDoorLocked: 0
+  requiredItem: 0
+  requiredItem2: 0
+  requiredItem3: 0
+  requiredItem4: 0
+  failMessage: It won't budge.
+  failMood: 2
+  openSound: {fileID: 8300000, guid: a43171f9c371a2c468ab95d52c51053e, type: 3}

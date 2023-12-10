@@ -47,11 +47,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPos: {x: 0, y: 0, z: 0}
   spawnOrientation: 999999
+  battery: 1
+  batt_rate: 0.0075
   viewerCount: 250
   vc_rate: 0.01
   vc_grav: -0.000004
+  averageViewCount: 0
+  peakViewCount: 0
   visitedRooms: []
   dialogueTags: []
+  basicDoorSounds:
+  - {fileID: 8300000, guid: 30626342e5e91694585f7db69d6253a7, type: 3}
+  - {fileID: 8300000, guid: 55cd12d5a267e73418a74b9c59eb9dc2, type: 3}
+  - {fileID: 8300000, guid: e4413556d4749da429c98637cc8c9d20, type: 3}
+  bigDoorSound: {fileID: 8300000, guid: ffb62c31acf21e942b8375892d69fd67, type: 3}
+  ladderSound: {fileID: 8300000, guid: 8ee444a413c62e74ea9b7249db18b6d6, type: 3}
 --- !u!114 &2916446103489455912
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -4757,8 +4757,13 @@ MonoBehaviour:
   requiresItem: 0
   requiresMultipleItems: 0
   isDoorLocked: 0
-  itemRequiredCount: 0
   requiredItem: 0
+  requiredItem2: 0
+  requiredItem3: 0
+  requiredItem4: 0
+  failMessage: It won't budge.
+  failMood: 2
+  openSound: {fileID: 8300000, guid: a43171f9c371a2c468ab95d52c51053e, type: 3}
 --- !u!65 &1242022663
 BoxCollider:
   m_ObjectHideFlags: 0

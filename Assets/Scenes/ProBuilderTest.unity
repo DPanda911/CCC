@@ -160,6 +160,12 @@ MonoBehaviour:
   requiresMultipleItems: 0
   isDoorLocked: 0
   requiredItem: 0
+  requiredItem2: 0
+  requiredItem3: 0
+  requiredItem4: 0
+  failMessage: It won't budge.
+  failMood: 2
+  openSound: 0
 --- !u!1 &84866328 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -2006677561848808045, guid: da5193fb14de71a469131a295cfe63f5, type: 3}
@@ -382,7 +388,14 @@ MonoBehaviour:
   requiresItem: 0
   requiresMultipleItems: 1
   isDoorLocked: 0
-  requiredItem: 5
+  requiredItem: 0
+  requiredItem2: 1
+  requiredItem3: 2
+  requiredItem4: 3
+  failMessage: <color=#7af>F<color=#f7f>o<color=#7f7>u<color=#fa7>r</color></color></color></color>
+    keys?!? Looks like I've got my work cut out for me, chat!
+  failMood: 4
+  openSound: 1
 --- !u!65 &413607457
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -451,6 +464,12 @@ MonoBehaviour:
   requiresMultipleItems: 0
   isDoorLocked: 0
   requiredItem: 0
+  requiredItem2: 0
+  requiredItem3: 0
+  requiredItem4: 0
+  failMessage: It won't budge.
+  failMood: 2
+  openSound: 0
 --- !u!1001 &523259944
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1277,6 +1296,12 @@ MonoBehaviour:
   requiresMultipleItems: 0
   isDoorLocked: 0
   requiredItem: 0
+  requiredItem2: 0
+  requiredItem3: 0
+  requiredItem4: 0
+  failMessage: It won't budge.
+  failMood: 2
+  openSound: 0
 --- !u!1 &1276354950 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5998109814200457598, guid: da5193fb14de71a469131a295cfe63f5, type: 3}
@@ -1368,6 +1393,12 @@ MonoBehaviour:
   requiresMultipleItems: 0
   isDoorLocked: 0
   requiredItem: 0
+  requiredItem2: 0
+  requiredItem3: 0
+  requiredItem4: 0
+  failMessage: It won't budge.
+  failMood: 2
+  openSound: 0
 --- !u!1 &1364484201 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -6368614790236905388, guid: da5193fb14de71a469131a295cfe63f5, type: 3}
