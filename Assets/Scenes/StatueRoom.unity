@@ -4386,7 +4386,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1163137246}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.473, y: 3.433, z: 0.15}
+  m_LocalPosition: {x: -0.473, y: 1.1, z: 0.15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4405,7 +4405,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c06535a987f46f4babce4c0464fef07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefab: {fileID: 919132149155446097, guid: fdd5cc417c05b014db2ce7299c698c36, type: 3}
+  prefab: {fileID: 7622455009592731486, guid: 5bbf32638438f5e44a31e1aea775df3f, type: 3}
   check: 0
   tag: Statue
   amountOfObj: 3
@@ -4755,7 +4755,9 @@ MonoBehaviour:
   playerPosition: {x: 5.5, y: 0.5, z: 3}
   playerRotation: 240
   requiresItem: 0
+  requiresMultipleItems: 0
   isDoorLocked: 0
+  itemRequiredCount: 0
   requiredItem: 0
 --- !u!65 &1242022663
 BoxCollider:
