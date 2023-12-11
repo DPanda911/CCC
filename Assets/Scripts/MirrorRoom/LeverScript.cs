@@ -15,12 +15,24 @@ public class LeverScript : MonoBehaviour, IInteractable
 
     private GameManager gm;
 
+    [SerializeField] string leverTag;
+
 
     // Start is called before the first frame update
     void Start()
     {
         anim = GetComponent<Animator>();
         gm = GameObject.Find("GameManager").GetComponent<GameManager>();
+
+        if (gm.CheckForMiscTag(leverTag))
+        {
+            flipped = true;
+            anim.Play("Lev_IsFlipped");
+            if (door)
+            {
+                door.GetComponent<Animator>().Play("MRDoor_IsOpened");
+            }
+        }
     }
 
     // Update is called once per frame
@@ -54,5 +66,7 @@ public class LeverScript : MonoBehaviour, IInteractable
         {
             door.GetComponent<Animator>().Play("MRDoor_Open");
         }
+
+        gm.NewMiscTag(leverTag);
     }
 }
