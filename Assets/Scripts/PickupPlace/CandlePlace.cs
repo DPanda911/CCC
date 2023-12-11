@@ -5,6 +5,7 @@ using UnityEngine;
 public class CandlePlace : MonoBehaviour, IInteractable
 {
     [SerializeField] InventoryManager.AllItems itemType;
+    [SerializeField] string itemTag;
     public GameObject spawnPrefab;
     public float xPos;
     public float yPos;
@@ -12,7 +13,9 @@ public class CandlePlace : MonoBehaviour, IInteractable
     // Start is called before the first frame update
     void Start()
     {
-        
+        if (GameManager.instance.CheckForMiscTag(itemTag)) {
+            Instantiate(spawnPrefab, new Vector3(xPos, yPos, zPos), Quaternion.identity);
+        }
     }
 
     // Update is called once per frame
@@ -33,6 +36,7 @@ public class CandlePlace : MonoBehaviour, IInteractable
 
                 Instantiate(spawnPrefab, new Vector3(xPos, yPos, zPos), Quaternion.identity);
 
+                GameManager.instance.NewMiscTag(itemTag);
             }
             else
             {

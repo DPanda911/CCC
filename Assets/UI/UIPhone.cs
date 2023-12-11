@@ -69,7 +69,9 @@ public class UIPhone : MonoBehaviour
         {
             PlayAnimation("Phone_Rest");
             intr.canInteract = true;
-            gm.DialogueMessage("It's important I check on that often. If my viewer count hits zero, I'll have no choice but to <color=#f77>stop the stream</color>.", "ViewCountExplanation", 3);
+            if (gm.CheckForDialogueTag("iShouldCheckViews")) {
+                gm.DialogueMessage("It's important I check on that often. If my viewer count hits zero, I'll have no choice but to <color=#f77>stop the stream</color>.", "ViewCountExplanation", 3);
+            }
         }
         if (Input.GetKeyDown(KeyCode.R) && intr.canInteract && im.HasItem(chargerItem))
         {

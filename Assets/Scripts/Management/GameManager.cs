@@ -27,13 +27,10 @@ public class GameManager : MonoBehaviour
     [SerializeField] private float vc_rate = 0.01f;
     [SerializeField] private float vc_grav = -0.000004f;
 
-    [SerializeField] private float averageViewCount = 0;
-    private int averageVCChecks = 0;
-    [SerializeField] private int peakViewCount = 0;
-
     [Header("Save Tags")]
     [SerializeField] private List<string> visitedRooms = new List<string>();
     [SerializeField] private List<string> dialogueTags = new List<string>();
+    [SerializeField] private List<string> miscTags = new List<string>();
 
 
     [Header("Sounds")]
@@ -41,6 +38,16 @@ public class GameManager : MonoBehaviour
     [SerializeField] AudioClip bigDoorSound;
     [SerializeField] AudioClip ladderSound;
     AudioSource src;
+
+
+    bool updating = true;
+
+    [Header("Stats")]
+    [SerializeField] private float averageViewCount = 0;
+    private int averageVCChecks = 0;
+    [SerializeField] private int peakViewCount = 0;
+    [SerializeField] private float startTime = 0;
+    [SerializeField] private float endTime = 0;
 
 
     void Awake()
@@ -64,50 +71,53 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
+        if (updating) {
+            viewerCount += vc_rate;
+            vc_rate += vc_grav;
 
-        viewerCount += vc_rate;
-        vc_rate += vc_grav;
+            //Debug.Log("Real Viewer Count: " + viewerCount + "\nView Count Change per Frame: " + vc_rate);
 
-        //Debug.Log("Real Viewer Count: " + viewerCount + "\nView Count Change per Frame: " + vc_rate);
-
-        if (Time.time > (timeSinceLastUpdate + 2.0f))
-        {
-            if (viewerCount <= 0) {
-                SceneManager.LoadScene("NoMoreViewers");
+            if (Time.time > (timeSinceLastUpdate + 2.0f))
+            {
+                if (viewerCount <= 0) {
+                    SceneManager.LoadScene("NoMoreViewers");
+                }
+                timeSinceLastUpdate = Time.time;
+                UpdateViewerCount();
             }
-            timeSinceLastUpdate = Time.time;
-            UpdateViewerCount();
-        }
 
-        battery -= batt_rate * Time.deltaTime;
-        battery = Mathf.Clamp(battery, 0f, 1f);
+            battery -= batt_rate * Time.deltaTime;
+            battery = Mathf.Clamp(battery, 0f, 1f);
+        }
     }
 
     public void UpdateViewerCount()
     {
-        TMP_Text textObj;
-        textObj = GameObject.Find("ViewCount").GetComponent<TextMeshProUGUI>();
-        if (textObj != null)
-        {
-            viewerCountInt = Mathf.CeilToInt(viewerCount);
-            int bweg = Mathf.Max(viewerCountInt, 0);
-            textObj.text = bweg.ToString("#,##0");
-        }
-        UIPhone pUI;
-        pUI = GameObject.Find("Phone UI").GetComponent<UIPhone>();
-        if (pUI != null) {
-            pUI.UpdatedVC(viewerCountInt);
-        }
+        if (updating) {
+            TMP_Text textObj;
+            textObj = GameObject.Find("ViewCount").GetComponent<TextMeshProUGUI>();
+            if (textObj != null)
+            {
+                viewerCountInt = Mathf.CeilToInt(viewerCount);
+                int bweg = Mathf.Max(viewerCountInt, 0);
+                textObj.text = bweg.ToString("#,##0");
+            }
+            UIPhone pUI;
+            pUI = GameObject.Find("Phone UI").GetComponent<UIPhone>();
+            if (pUI != null) {
+                pUI.UpdatedVC(viewerCountInt);
+            }
 
-        if (averageVCChecks > 0) {
-            averageViewCount = (viewerCountInt + (averageViewCount * averageVCChecks)) / (averageVCChecks + 1);
-        } else {
-            averageViewCount = viewerCountInt;
+            if (averageVCChecks > 0) {
+                averageViewCount = (viewerCountInt + (averageViewCount * averageVCChecks)) / (averageVCChecks + 1);
+            } else {
+                averageViewCount = viewerCountInt;
+            }
+            averageVCChecks++;
+            peakViewCount = Mathf.Max(viewerCountInt, peakViewCount);
+            Debug.Log(averageViewCount);
+            Debug.Log(peakViewCount);
         }
-        averageVCChecks++;
-        peakViewCount = Mathf.Max(viewerCountInt, peakViewCount);
-        Debug.Log(averageViewCount);
-        Debug.Log(peakViewCount);
     }
 
     public void SetSpawnPos(Vector3 newSpawn, float newOrient)
@@ -145,15 +155,22 @@ public class GameManager : MonoBehaviour
             Debug.Log("New Room!!!! Adding " + sceneName + " to the visitedRooms list.");
             visitedRooms.Add(sceneName);
             AudienceWoo(3f, 0.002f);
+            if (sceneName == "TutorialRoom") {
+                startTime = Time.time;
+            }
         }
+
     }
 
     public void AudienceWoo(float memberAdd, float rateChange)
     {
-        viewerCount += memberAdd;
-        vc_rate += rateChange;
+        if (updating)
+        {
+            viewerCount += memberAdd;
+            vc_rate += rateChange;
 
-        Debug.Log("AUDIENCE WOO'D ----\nView Count Addition: " + memberAdd + "\nRate Change: " + rateChange);
+            Debug.Log("AUDIENCE WOO'D ----\nView Count Addition: " + memberAdd + "\nRate Change: " + rateChange);
+        }
     }
 
     public float GetBattery()
@@ -192,6 +209,24 @@ public class GameManager : MonoBehaviour
 
     public bool CheckForDialogueTag(string tag) {
         return dialogueTags.Contains(tag);
+    }
+
+    public void NewMiscTag(string tag) {
+        if ((tag != "") && (tag != null))
+        miscTags.Add(tag);
+    }
+
+    public bool CheckForMiscTag(string tag) {
+        if ((tag == "") || (tag == null))
+        {
+            return false;
+        } else {
+            return miscTags.Contains(tag);
+        }
+    }
+
+    public void StopUpdating() {
+        updating = false;
     }
 
     public void PlaySound(SoundTypes snd)

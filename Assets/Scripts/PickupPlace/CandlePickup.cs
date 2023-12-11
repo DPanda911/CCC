@@ -7,6 +7,7 @@ public class CandlePickup : MonoBehaviour, IInteractable
     [SerializeField] InventoryManager.AllItems itemType;
     public GameObject candle;
     public bool isActive;
+    [SerializeField] private string itemTag;
 
     [Header("Pickup Message")]
     [SerializeField] private bool useMessage;
@@ -21,7 +22,10 @@ public class CandlePickup : MonoBehaviour, IInteractable
     // Start is called before the first frame update
     void Start()
     {
-
+        if (GameManager.instance.CheckForMiscTag(itemTag)) {
+            isActive = false;
+            candle.SetActive(false);
+        }
     }
 
     // Update is called once per frame
@@ -46,6 +50,7 @@ public class CandlePickup : MonoBehaviour, IInteractable
             if (useAudienceSway) {
                 GameManager.instance.AudienceWoo(pickupVCAddition, pickupRateAddition);
             }
+            GameManager.instance.NewMiscTag(itemTag);
         }
 
         if (!isActive)

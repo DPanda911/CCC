@@ -102,6 +102,7 @@ MonoBehaviour:
   itemType: 1
   candle: {fileID: 7428315853951265664}
   isActive: 1
+  itemTag: cr_purpleKey
   useMessage: 1
   pickupMessage: A <color=#f7f>purple key</color>! This should come in handy.
   pickupTag: PurpleKeyGet
