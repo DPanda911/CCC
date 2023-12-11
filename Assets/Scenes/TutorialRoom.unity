@@ -1859,7 +1859,7 @@ MonoBehaviour:
   requiredItem4: 0
   failMessage: It won't budge.
   failMood: 2
-  openSound: {fileID: 8300000, guid: a43171f9c371a2c468ab95d52c51053e, type: 3}
+  openSound: 0
 --- !u!65 &577540761
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2961,7 +2961,7 @@ MonoBehaviour:
   requiredItem4: 0
   failMessage: It won't budge.
   failMood: 2
-  openSound: {fileID: 8300000, guid: a43171f9c371a2c468ab95d52c51053e, type: 3}
+  openSound: 0
 --- !u!65 &873876544
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3440,6 +3440,7 @@ MonoBehaviour:
   itemType: 9
   candle: {fileID: 987467497}
   isActive: 1
+  itemTag: 
   useMessage: 0
   pickupMessage: 
   pickupTag: 

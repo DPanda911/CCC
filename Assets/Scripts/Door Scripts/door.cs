@@ -124,6 +124,10 @@ public class door : MonoBehaviour, IInteractable
         gm.PlaySound(openSound);
         intrac.canInteract = false;
         fd.leaving = true;
+
+        if (openSound == GameManager.SoundTypes.Ladder) {
+            gm.StopUpdating();
+        }
         yield return new WaitForSeconds(.35f);
         SceneManager.LoadScene(sceneLoad);
     }

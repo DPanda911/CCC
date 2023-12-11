@@ -46,8 +46,9 @@ public class GameManager : MonoBehaviour
     [SerializeField] private float averageViewCount = 0;
     private int averageVCChecks = 0;
     [SerializeField] private int peakViewCount = 0;
-    [SerializeField] private float startTime = 0;
-    [SerializeField] private float endTime = 0;
+    private float startTime = 0;
+    private float endTime = 0;
+    public float runDuration = 0;
 
 
     void Awake()
@@ -227,6 +228,8 @@ public class GameManager : MonoBehaviour
 
     public void StopUpdating() {
         updating = false;
+        endTime = Time.time;
+        runDuration = endTime - startTime;
     }
 
     public void PlaySound(SoundTypes snd)

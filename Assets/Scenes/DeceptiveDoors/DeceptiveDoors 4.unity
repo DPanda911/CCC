@@ -147,7 +147,7 @@ MonoBehaviour:
   requiredItem4: 0
   failMessage: It won't budge.
   failMood: 2
-  openSound: {fileID: 8300000, guid: a43171f9c371a2c468ab95d52c51053e, type: 3}
+  openSound: 0
 --- !u!65 &3569849
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -255,7 +255,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &334076334
 GameObject:
@@ -5067,7 +5067,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!1001 &397118288
 PrefabInstance:
@@ -5167,7 +5167,7 @@ MonoBehaviour:
   requiredItem4: 0
   failMessage: It won't budge.
   failMood: 2
-  openSound: {fileID: 0}
+  openSound: 0
 --- !u!65 &397118291
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5415,7 +5415,7 @@ MonoBehaviour:
   requiredItem4: 0
   failMessage: It won't budge.
   failMood: 2
-  openSound: {fileID: 0}
+  openSound: 0
 --- !u!65 &745908015
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5540,7 +5540,7 @@ MonoBehaviour:
   requiredItem4: 0
   failMessage: It won't budge.
   failMood: 2
-  openSound: {fileID: 0}
+  openSound: 0
 --- !u!65 &768158086
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10364,7 +10364,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!114 &901864661
 MonoBehaviour:
@@ -10390,7 +10390,7 @@ MonoBehaviour:
   requiredItem4: 0
   failMessage: It won't budge.
   failMood: 2
-  openSound: {fileID: 8300000, guid: a43171f9c371a2c468ab95d52c51053e, type: 3}
+  openSound: 0
 --- !u!136 &949950735
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -10500,7 +10500,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1084311234
 MonoBehaviour:
@@ -10526,7 +10526,7 @@ MonoBehaviour:
   requiredItem4: 0
   failMessage: It won't budge.
   failMood: 2
-  openSound: {fileID: 8300000, guid: a43171f9c371a2c468ab95d52c51053e, type: 3}
+  openSound: 0
 --- !u!65 &1084311235
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15557,7 +15557,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!136 &1214400825
 CapsuleCollider:
@@ -15671,7 +15671,7 @@ MonoBehaviour:
   requiredItem4: 0
   failMessage: It won't budge.
   failMood: 2
-  openSound: {fileID: 0}
+  openSound: 0
 --- !u!65 &1217661583
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15934,7 +15934,7 @@ MonoBehaviour:
   requiredItem4: 0
   failMessage: It won't budge.
   failMood: 2
-  openSound: {fileID: 8300000, guid: a43171f9c371a2c468ab95d52c51053e, type: 3}
+  openSound: 0
 --- !u!65 &1241019849
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15972,7 +15972,7 @@ MonoBehaviour:
   requiredItem4: 0
   failMessage: It won't budge.
   failMood: 2
-  openSound: {fileID: 8300000, guid: a43171f9c371a2c468ab95d52c51053e, type: 3}
+  openSound: 0
 --- !u!65 &1241019851
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16023,7 +16023,7 @@ MonoBehaviour:
   requiredItem4: 0
   failMessage: It won't budge.
   failMood: 2
-  openSound: {fileID: 8300000, guid: a43171f9c371a2c468ab95d52c51053e, type: 3}
+  openSound: 0
 --- !u!65 &1335699657
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16333,7 +16333,7 @@ Transform:
   - {fileID: 1533374432}
   - {fileID: 580677302}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1702490535
 PrefabInstance:
@@ -16433,7 +16433,7 @@ MonoBehaviour:
   requiredItem4: 0
   failMessage: It won't budge.
   failMood: 2
-  openSound: {fileID: 0}
+  openSound: 0
 --- !u!65 &1702490538
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16447,6 +16447,75 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 3, z: 0.1}
   m_Center: {x: -0.76, y: 1.55, z: -0.46}
+--- !u!1001 &1708122617
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8870055535016549510, guid: 0e1e117b9630983408bacd656f226fd2, type: 3}
+      propertyPath: m_Name
+      value: Battery Pack
+      objectReference: {fileID: 0}
+    - target: {fileID: 8870055535016549513, guid: 0e1e117b9630983408bacd656f226fd2, type: 3}
+      propertyPath: m_Size.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8870055535016549513, guid: 0e1e117b9630983408bacd656f226fd2, type: 3}
+      propertyPath: m_Size.z
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8870055535016549514, guid: 0e1e117b9630983408bacd656f226fd2, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8870055535016549514, guid: 0e1e117b9630983408bacd656f226fd2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.615
+      objectReference: {fileID: 0}
+    - target: {fileID: 8870055535016549514, guid: 0e1e117b9630983408bacd656f226fd2, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.943
+      objectReference: {fileID: 0}
+    - target: {fileID: 8870055535016549514, guid: 0e1e117b9630983408bacd656f226fd2, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.458
+      objectReference: {fileID: 0}
+    - target: {fileID: 8870055535016549514, guid: 0e1e117b9630983408bacd656f226fd2, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.685542
+      objectReference: {fileID: 0}
+    - target: {fileID: 8870055535016549514, guid: 0e1e117b9630983408bacd656f226fd2, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.685542
+      objectReference: {fileID: 0}
+    - target: {fileID: 8870055535016549514, guid: 0e1e117b9630983408bacd656f226fd2, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.17329828
+      objectReference: {fileID: 0}
+    - target: {fileID: 8870055535016549514, guid: 0e1e117b9630983408bacd656f226fd2, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.17329828
+      objectReference: {fileID: 0}
+    - target: {fileID: 8870055535016549514, guid: 0e1e117b9630983408bacd656f226fd2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8870055535016549514, guid: 0e1e117b9630983408bacd656f226fd2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8870055535016549514, guid: 0e1e117b9630983408bacd656f226fd2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -28.373
+      objectReference: {fileID: 0}
+    - target: {fileID: 8870055535016549519, guid: 0e1e117b9630983408bacd656f226fd2, type: 3}
+      propertyPath: itemTag
+      value: dr_batPack_0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e1e117b9630983408bacd656f226fd2, type: 3}
 --- !u!136 &1784855658
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -21616,7 +21685,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!136 &2059842642
 CapsuleCollider:
