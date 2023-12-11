@@ -7,12 +7,8 @@ public class ManagerRemover : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Destroy(GameManager.instance.gameObject);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if (GameManager.instance != null) {
+            Destroy(GameManager.instance.gameObject);
+        }
     }
 }

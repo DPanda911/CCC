@@ -190,6 +190,10 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    public bool CheckForDialogueTag(string tag) {
+        return dialogueTags.Contains(tag);
+    }
+
     public void PlaySound(SoundTypes snd)
     {
         switch (snd)

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class LostViewersScreen : MonoBehaviour
 {
@@ -62,6 +63,8 @@ public class LostViewersScreen : MonoBehaviour
         staticImage.enabled = false;
         viewerImg.enabled = false;
         src.Stop();
+        yield return new WaitForSeconds(1.5f);
+        SceneManager.LoadScene("GameOver");
 
     }
 }

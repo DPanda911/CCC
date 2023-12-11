@@ -51,6 +51,8 @@ public class CheckPosBool : MonoBehaviour
                 check = true;
                 Instantiate(prefab);
 
+                GameManager.instance.DialogueMessage("That looks about right. Seems like it spawned <color=#f7f>something</color> in the middle of the room, too.", "CandleRoomSomethingSpawned", 0);
+
             }
 
         }
