@@ -40,6 +40,11 @@ public class RendAndUI : MonoBehaviour
 
     private AudioSource src;
 
+    private Image endingFader;
+    private SpriteRenderer fullStreamLayout;
+    private bool endingFading = false;
+    private float endFadeAmnt = 0f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -55,7 +60,14 @@ public class RendAndUI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (endingFading)
+        {
+            endFadeAmnt += 0.4f * Time.deltaTime;
+            endFadeAmnt = Mathf.Clamp(endFadeAmnt, 0f, 1f);
+
+            endingFader.color = new Color(0f, 0f, 0f, endFadeAmnt);
+            fullStreamLayout.color = new Color(1f - endFadeAmnt, 1f - endFadeAmnt, 1f - endFadeAmnt, 1f);
+        }
     }
 
     public void RefreshInventoryUI()
@@ -102,5 +114,11 @@ public class RendAndUI : MonoBehaviour
         src.clip = dialogueSounds[pick];
         src.pitch = Random.Range(0.97f, 1.03f);
         src.Play();
+    }
+
+    public void EndGameFade() {
+        endingFader = GameObject.Find("FullFade").GetComponent<Image>();
+        fullStreamLayout = GameObject.Find("basicLayout").GetComponent<SpriteRenderer>();
+        endingFading = true;
     }
 }

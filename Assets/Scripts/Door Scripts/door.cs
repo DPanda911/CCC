@@ -127,8 +127,12 @@ public class door : MonoBehaviour, IInteractable
 
         if (openSound == GameManager.SoundTypes.Ladder) {
             gm.StopUpdating();
+            RendAndUI rau = GameObject.Find("Renderer").GetComponent<RendAndUI>();
+            rau.EndGameFade();
+            yield return new WaitForSeconds(4f);
+        } else {
+            yield return new WaitForSeconds(.35f);
         }
-        yield return new WaitForSeconds(.35f);
         SceneManager.LoadScene(sceneLoad);
     }
 
