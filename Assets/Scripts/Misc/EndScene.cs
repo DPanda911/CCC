@@ -55,6 +55,10 @@ public class EndScene : MonoBehaviour
     private int avgDisplay;
     private int peakDisplay;
 
+    [Header("Debug")]
+    [SerializeField] bool debugMode = false;
+    [SerializeField] int debugRank = 0;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -66,6 +70,10 @@ public class EndScene : MonoBehaviour
         StartCoroutine(crt);
 
         quitBtn.onClick.AddListener(ExitScene);
+        if (debugMode) {
+            SetMessage(3, "<color=#f77>Remember to turn off Debug Mode before building!\n</color>Playing cutscene for rank <color=#7af>" + debugRank + "</color>...", 3);
+        }
+        GameManager.instance.StopUpdating();
     }
 
     // Update is called once per frame
@@ -213,13 +221,38 @@ public class EndScene : MonoBehaviour
 
 
     private void SetStatLines() {
-        if (GameManager.instance == null) {
+        if ((GameManager.instance == null) && (!debugMode)) {
             return;
         }
 
         int howPleased = 0;
-        averageViewCount = GameManager.instance.GetAverageViews();
-        peakViewCount = GameManager.instance.GetPeakViews();
+        if (!debugMode) {
+            averageViewCount = GameManager.instance.GetAverageViews();
+            peakViewCount = GameManager.instance.GetPeakViews();
+        } else {
+            switch (debugRank) {
+                case 0:
+                    averageViewCount = Random.Range(180, 235);
+                    peakViewCount = Random.Range(250, 270);
+                    break;
+                case 1:
+                    averageViewCount = Random.Range(240, 255);
+                    peakViewCount = Random.Range(275, 315);
+                    break;
+                case 2:
+                    averageViewCount = Random.Range(280, 295);
+                    peakViewCount = Random.Range(320, 355);
+                    break;
+                case 3:
+                    averageViewCount = Random.Range(312, 320);
+                    peakViewCount = Random.Range(360, 380);
+                    break;
+                case 4:
+                    averageViewCount = Random.Range(325, 335);
+                    peakViewCount = Random.Range(390, 400);
+                    break;
+            }
+        }
 
         avgDisplay = GameManager.instance.ConvertViews(averageViewCount);
         peakDisplay = GameManager.instance.ConvertViews(peakViewCount);
@@ -261,15 +294,16 @@ public class EndScene : MonoBehaviour
             angles[7] = new Vector3(-5, -2, 0);
             howPleased += 4;
         } else if (peakViewCount >= 360) {
-            dialogues[7] = "I also peaked at  an impressive <color=#ff7>" + peakDisplay.ToString("#,##0") + "</color> viewers!";
+            dialogues[7] = "I also peaked at an impressive <color=#ff7>" + peakDisplay.ToString("#,##0") + "</color> viewers!";
             moods[7] = 1;
             howPleased += 3;
+            angles[7] = new Vector3(-2, 0, 0);
         } else if (peakViewCount >= 320) {
             dialogues[7] = "I also peaked at <color=#ff7>" + peakDisplay.ToString("#,##0") + "</color> viewers!";
             moods[7] = 1;
             howPleased += 2;
         } else if (peakViewCount >= 275) {
-            dialogues[7] = "The stream peaked at <color=#ff7>" + peakDisplay.ToString("#,##0") + "</color> viewers.";
+            dialogues[7] = "...and the stream peaked at <color=#ff7>" + peakDisplay.ToString("#,##0") + "</color> viewers.";
             moods[7] = 0;
             howPleased += 1;
             angles[7] = new Vector3(0, 0, 2);
@@ -285,8 +319,11 @@ public class EndScene : MonoBehaviour
                 angles[4] = new Vector3(-8, 0, 0);
                 SetMessage(4, "God, that went SO GOOD!!!!", 5);
                 SetMessage(8, "Man, I am so good at streaming.", 0);
+                angles[8] = new Vector3(2, 0, 0);
                 SetMessage(9, "The guys over at <color=#7cf>T-FUEL</color> are lucky they picked someone<br>as good as me to promote their crappy drink.", 0);
+                angles[9] = new Vector3(0, 5, 3);
                 SetMessage(10, "I just know they'll be paying me a fat wad of cash. Goodbye, bills!", 1);
+                angles[10] = new Vector3(-5, 0, 0);
                 SetMessage(11, "Oh, Nelle. You've truly outdone yourself.", 0);
                 finalRank = 4;
                 break;
@@ -306,8 +343,10 @@ public class EndScene : MonoBehaviour
             case 3:
             case 2:
                 SetMessage(4, "Certainly not the worst stream I've had.", 1);
-                SetMessage(8, "...I've had better.", 2);
+                SetMessage(8, "...I mean, I've had better.", 2);
                 SetMessage(9, "At least <color=#7cf>T-FUEL</color> will still be paying me.", 0);
+                SetMessage(11, "That'll be nice.", 0);
+                angles[11] = new Vector3(2, 0, 0);
                 finalRank = 1;
                 break;
             case 1:
@@ -319,7 +358,7 @@ public class EndScene : MonoBehaviour
                 SetMessage(9, "<color=#7cf>T-FUEL</color>'s still paying me, right?<br>I think that still qualifies as a \"successful\" stream.<br> Not like I died or anything.", 2);
                 angles[8] = new Vector3(1, 0, 0);
                 angles[9] = new Vector3(-2, -3, -4);
-                SetMessage(10, "I think I just gotta cross my fingers and pray they still pay me.", 3);
+                SetMessage(10, "I hope they still pay me for that.", 3);
                 SetMessage(11, "...otherwise, still kinda <color=#f77>screwed</color>.", 4);
                 SetMessage(13, "...there's always next stream, I guess.", 7);
                 angles[12] = new Vector3(2, 0, 0);
