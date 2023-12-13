@@ -101,6 +101,7 @@ public class GameManager : MonoBehaviour
             {
                 viewerCountInt = Mathf.CeilToInt(viewerCount);
                 int bweg = Mathf.Max(viewerCountInt, 0);
+                bweg = ConvertViews(bweg);
                 textObj.text = bweg.ToString("#,##0");
             }
             UIPhone pUI;
@@ -270,6 +271,16 @@ public class GameManager : MonoBehaviour
         BasicDoor = 0,
         BigDoor = 1,
         Ladder = 2
+    }
+
+    public int ConvertViews(float vc) {
+        float runLen = Time.time - startTime;
+        float timeMult = 1;
+        if (runLen < 30) {
+            timeMult = -1f * Mathf.Pow((runLen-30f)/30f, 2f) + 1f;
+        }
+
+        return Mathf.CeilToInt(Mathf.Pow(((15.811f / 250f) * vc), 2) * timeMult);
     }
    
 

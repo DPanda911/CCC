@@ -154,13 +154,13 @@ public class UIPhone : MonoBehaviour
     public void UpdatedVC(int viewerCount) {
         if (viewerCount >= 300) {
             viewerImg.sprite = viewerTiers[5];
-        } else if (viewerCount >= 100) {
+        } else if (viewerCount >= 122.477) {
             viewerImg.sprite = viewerTiers[0];
-        } else if (viewerCount >= 75) {
+        } else if (viewerCount >= 86.605) {
             viewerImg.sprite = viewerTiers[1];
-        } else if (viewerCount >= 50) {
+        } else if (viewerCount >= 50.001) {
             viewerImg.sprite = viewerTiers[2];
-        } else if (viewerCount >= 25) {
+        } else if (viewerCount >= 27.387) {
             viewerImg.sprite = viewerTiers[3];
         } else {
             viewerImg.sprite = viewerTiers[4];

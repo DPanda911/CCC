@@ -26,6 +26,7 @@ public class MessageSpawner : MonoBehaviour
         if (ot.gameObject.name == "Player")
         {
             gm.DialogueMessage(message, repeatTag, mood);
+            Destroy(gameObject);
         }
     }
 }

@@ -882,10 +882,8 @@ MonoBehaviour:
   - It really did suck the fun out of it.
   - And to think, It was such an interesting location.<br>Why wasn't anyone interested?
   - ...
-  - Maybe it was me.
-  - Maybe I'm just not fun enough to watch.
   - Perhaps a career change is in order.
-  moods: 010000000000000004000000010000000300000001000000000000000100000003000000000000000000000002000000
+  moods: 01000000000000000400000001000000030000000100000000000000040000000300000002000000
   dialogueSounds:
   - {fileID: 8300000, guid: 89de0030daf35a44d87d1551bd92ca54, type: 3}
   - {fileID: 8300000, guid: 3356b57b528e91a44a49be3e46104011, type: 3}

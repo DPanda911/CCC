@@ -49,6 +49,9 @@ public class EndScene : MonoBehaviour
     [SerializeField] private int averageViewCount;
     [SerializeField] private int peakViewCount;
 
+    private int avgDisplay;
+    private int peakDisplay;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -143,7 +146,7 @@ public class EndScene : MonoBehaviour
         fadeText = true;
         yield return new WaitForSeconds(4f);
         bgMode = 1;
-        yield return new WaitForSeconds(7f);
+        yield return new WaitForSeconds(6f);
         PlayMessage(4);
         fadeText = false;
         canText = true;
@@ -163,14 +166,14 @@ public class EndScene : MonoBehaviour
         clearMsg.SetActive(true);
         yield return new WaitForSeconds(1.5f);
 
-        t_average.text = "Average Viewer Count: <color=#ff7>" + averageViewCount + "";
+        t_average.text = "Average Viewer Count: <color=#ff7>" + avgDisplay.ToString("#,##0") + "";
         t_average.enabled = true;
         src.pitch = 1f;
         src.volume = 0.4f;
         src.Play();
         yield return new WaitForSeconds(0.6f);
 
-        t_peak.text = "Peak Viewer Count: <color=#f7f>" + peakViewCount + "";
+        t_peak.text = "Peak Viewer Count: <color=#f7f>" + peakDisplay.ToString("#,##0") + "";
         t_peak.enabled = true;
         src.pitch = 1.05f;
         src.Play();
@@ -211,45 +214,48 @@ public class EndScene : MonoBehaviour
         averageViewCount = GameManager.instance.GetAverageViews();
         peakViewCount = GameManager.instance.GetPeakViews();
 
+        avgDisplay = GameManager.instance.ConvertViews(averageViewCount);
+        peakDisplay = GameManager.instance.ConvertViews(peakViewCount);
+
         if (averageViewCount >= 320) {
-            dialogues[6] = "I could hardly believe it, I somehow got a whopping <color=#ff7>" + averageViewCount + "</color> average viewer count! How the hell did I pull that off???";
+            dialogues[6] = "I could hardly believe it, I somehow got a whopping <color=#ff7>" + avgDisplay.ToString("#,##0") + "</color> average viewer count! How the hell did I pull that off???";
             moods[6] = 1;
             howPleased = 5;
         } else if (averageViewCount >= 300) {
-            dialogues[6] = "I managed to rack up an average viewer count of <color=#ff7>" + averageViewCount + "</color>! Way more than I usually get!";
+            dialogues[6] = "I managed to rack up an average viewer count of <color=#ff7>" + avgDisplay.ToString("#,##0") + "</color>! Way more than I usually get!";
             moods[6] = 1;
             howPleased = 4;
         } else if (averageViewCount >= 280) {
-            dialogues[6] = "I got an impressive count of <color=#ff7>" + averageViewCount + "</color> average viewers.";
+            dialogues[6] = "I got an impressive count of <color=#ff7>" + avgDisplay.ToString("#,##0") + "</color> average viewers.";
             moods[6] = 0;
             howPleased = 3;
         } else if (averageViewCount >= 260) {
-            dialogues[6] = "I had <color=#ff7>" + averageViewCount + "</color> people watching on average.";
+            dialogues[6] = "I had <color=#ff7>" + avgDisplay.ToString("#,##0") + "</color> people watching on average.";
             moods[6] = 2;
             howPleased = 2;
         } else if (averageViewCount >= 240) {
-            dialogues[6] = "I had like <color=#ff7>" + averageViewCount + "</color> people watching on average.";
+            dialogues[6] = "I had like <color=#ff7>" + avgDisplay.ToString("#,##0") + "</color> people watching on average.";
             moods[6] = 2;
             howPleased = 1;
         } else {
-            dialogues[6] = "I only managed to get <color=#ff7>" + averageViewCount + "</color> people watching on average.<br>Not my best, but not my worst.";
+            dialogues[6] = "I only managed to get <color=#ff7>" + avgDisplay.ToString("#,##0") + "</color> people watching on average.";
             moods[6] = 3;
         }
 
         if (peakViewCount >= 375) {
-            dialogues[7] = "...and a peak count of <color=#ff7>" + peakViewCount + "</color>?!? That's insane!";
+            dialogues[7] = "...and a peak count of <color=#ff7>" + peakDisplay.ToString("#,##0") + "</color>?!? That's insane!";
             moods[7] = 5;
             howPleased += 3;
         } else if (peakViewCount >= 320) {
-            dialogues[7] = "I also peaked at <color=#ff7>" + peakViewCount + "</color> viewers!";
+            dialogues[7] = "I also peaked at <color=#ff7>" + peakDisplay.ToString("#,##0") + "</color> viewers!";
             moods[7] = 1;
             howPleased += 2;
         } else if (peakViewCount >= 275) {
-            dialogues[7] = "I also peaked at <color=#ff7>" + peakViewCount + "</color> viewers.";
+            dialogues[7] = "The stream peaked at <color=#ff7>" + peakDisplay.ToString("#,##0") + "</color> viewers.";
             moods[7] = 0;
             howPleased += 1;
         } else {
-            dialogues[7] = "It also said my view count got up to <color=#ff7>" + peakViewCount + "</color>. Probably just at the start, though.";
+            dialogues[7] = "It also said my view count got up to <color=#ff7>" + peakDisplay.ToString("#,##0") + "</color>. Probably just at the start, though.";
             moods[7] = 2;
         }
 
@@ -269,6 +275,10 @@ public class EndScene : MonoBehaviour
                 SetMessage(8, "Great job, Nelle!", 1);
                 finalRank = 3;
                 break;
+            case 5:
+            case 4:
+                finalRank = 2;
+                break;
             case 3:
             case 2:
                 SetMessage(4, "Certainly not the worst stream I've had.", 1);
@@ -280,10 +290,10 @@ public class EndScene : MonoBehaviour
             case 0:
                 SetMessage(4, "...", 6);
                 SetMessage(8, "Yeah, not my best work.", 3);
-                SetMessage(9, "<color=#7cf>T-FUEL</color>'s still paying me, right? I think that still qualifies as a \"successful\" stream.<br> Not like I died or anything.", 2);
-                SetMessage(10, "...I think I just gotta cross my fingers and pray they still pay me.", 3);
+                SetMessage(9, "<color=#7cf>T-FUEL</color>'s still paying me, right?<br>I think that still qualifies as a \"successful\" stream.<br> Not like I died or anything.", 2);
+                SetMessage(10, "I think I just gotta cross my fingers and pray they still pay me.", 3);
                 SetMessage(11, "...otherwise, still kinda <color=#f77>screwed</color>.", 4);
-                SetMessage(13, "...there's always next stream.", 7);
+                SetMessage(13, "...there's always next stream, I guess.", 7);
                 finalRank = 0;
                 break;
             default:
