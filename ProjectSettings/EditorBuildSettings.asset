@@ -48,12 +48,12 @@ EditorBuildSettings:
     path: Assets/Scenes/BeastLair.unity
     guid: f92de18d1b0a8bf4faca3cba45836240
   - enabled: 1
-    path: Assets/Scenes/WinScene.unity
-    guid: e3c1e58f3c4f8134b839d2c89b115b3d
-  - enabled: 1
     path: Assets/Scenes/MenusAndStuff/NoMoreViewers.unity
     guid: c305d833a321d0b409796ee8bbe9abdb
   - enabled: 1
     path: Assets/Scenes/MenusAndStuff/GameOver.unity
     guid: 738c5a2262ba5cd4f94ec6fe7272336c
+  - enabled: 1
+    path: Assets/Scenes/MenusAndStuff/ExitCutscene.unity
+    guid: 36491219fd74e4b44a65055805f8bc1e
   m_configObjects: {}

@@ -181,10 +181,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Made by Damian, Daniel, Tim, Francisco, and Niko
+  m_text: 'A game by <color=#C82F7A>The Gays and Fran</color>
 
-    Using sound effects
-    from zapsplat.com'
+    Damian, Daniel,
+    Tim, Francisco, and Niko
+
+    Using sound effects from zapsplat.com'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 876a271e5d85ee44e9ae7458d12df0a1, type: 2}
   m_sharedMaterial: {fileID: -3525228908174661564, guid: 876a271e5d85ee44e9ae7458d12df0a1, type: 2}

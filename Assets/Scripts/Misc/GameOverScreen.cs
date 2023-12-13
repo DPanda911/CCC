@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 using TMPro;
 
 public class GameOverScreen : MonoBehaviour
@@ -35,6 +36,8 @@ public class GameOverScreen : MonoBehaviour
 
         IEnumerator crt = StartScene();
         StartCoroutine(crt);
+
+        quitBtn.onClick.AddListener(ExitScene);
     }
 
     // Update is called once per frame
@@ -90,5 +93,10 @@ public class GameOverScreen : MonoBehaviour
         src.pitch = Random.Range(0.97f, 1.03f);
         src.Play();
         spring = 0f;
+    }
+
+    void ExitScene()
+    {
+        SceneManager.LoadScene("Main Menu");
     }
 }

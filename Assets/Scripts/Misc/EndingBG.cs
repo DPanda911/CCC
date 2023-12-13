@@ -30,7 +30,7 @@ public class EndingBG : MonoBehaviour
         grassPlane.transform.localPosition = new Vector3(0f, -0.6f + (planeOffset * 0.075f), -1f * (driveDistance % 10f));
 
         float camYOffset = Mathf.PerlinNoise(driveDistance * 1f, 0f);
-        cam.transform.localPosition = new Vector3(-0.1f, 0.75f + (camYOffset * 0.01f), 0f);
+        cam.transform.localPosition = new Vector3(-0.12f, 0.75f + (camYOffset * 0.01f), 0f);
 
         float rotOffset = Mathf.PerlinNoise(0f, driveDistance * 0.2f);
 

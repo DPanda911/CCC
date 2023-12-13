@@ -250,6 +250,22 @@ public class GameManager : MonoBehaviour
         src.Play();
     }
 
+    public int GetAverageViews() {
+        return Mathf.FloorToInt(averageViewCount);
+    }
+
+    public int GetPeakViews() {
+        return peakViewCount;
+    }
+
+    public string GetDuration() {
+        int m = TimeSpan.FromSeconds(runDuration).Minutes;
+        int s = TimeSpan.FromSeconds(runDuration).Seconds;
+        int ms = TimeSpan.FromSeconds(runDuration).Milliseconds;
+
+        return string.Format("{0:00}:{1:00}.{2:000}", m, s, ms);
+    }
+
     public enum SoundTypes {
         BasicDoor = 0,
         BigDoor = 1,
