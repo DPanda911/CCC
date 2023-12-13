@@ -582,7 +582,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneLoad: DeceptiveDoors
-  playerPosition: {x: -7, y: -0.5, z: -0.25}
+  playerPosition: {x: -7.5, y: -0.5, z: -0.25}
   playerRotation: 90
   requiresItem: 0
   requiresMultipleItems: 0

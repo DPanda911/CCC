@@ -2932,12 +2932,28 @@ MonoBehaviour:
   - ...wait.
   - The GameManager seems to be broken. Ignore this.
   - Not too shabby, if I say so myself.
-  - I bet the guys over at <color=#7cf>T-FUEL</color> are happy.
+  - <color=#7cf>T-FUEL</color> should hopefully be sending the money over soon.
   - I might even be able to rest a bit with those bills I gotta pay.
   - Nice job, me!
   - ...
   - Wonder where my next stream will lead me...
   moods: 0000000002000000020000000000000001000000000000000400000004000000020000000000000001000000050000000600000000000000
+  angles:
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: -3, y: 0, z: 0}
+  - {x: 0, y: 2, z: -0.5}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: -3, y: 0, z: 0}
+  - {x: 2, y: 2, z: -6}
+  endbg: {fileID: 1664018152}
   dialogueSounds:
   - {fileID: 8300000, guid: 8d7a96eff4be40b4393425a96c60c227, type: 3}
   - {fileID: 8300000, guid: 6e04907ad980d9b4cb8035766bc59718, type: 3}
@@ -2948,6 +2964,12 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 58021013854893842af9505c259c266e, type: 3}
   - {fileID: 8300000, guid: 28632b0b1b9f21c4a94ac80e3aa3abfb, type: 3}
   hitSound: {fileID: 8300000, guid: 4ba67553b6f72fe40af4dff7580ce3cc, type: 3}
+  rankSounds:
+  - {fileID: 8300000, guid: 5e29f6344c6439245843a725698ebfb9, type: 3}
+  - {fileID: 8300000, guid: 4136e8cbf9e1b5e45aee056f0f1a63b5, type: 3}
+  - {fileID: 8300000, guid: 5dc609fd4361d63408798001244ac65a, type: 3}
+  - {fileID: 8300000, guid: 2d69858831bc9c34f9efa582bd5e525f, type: 3}
+  - {fileID: 8300000, guid: 0466fe72c6cc4b44fa0be94c7f393c98, type: 3}
   averageViewCount: 0
   peakViewCount: 0
 --- !u!1 &2050714258

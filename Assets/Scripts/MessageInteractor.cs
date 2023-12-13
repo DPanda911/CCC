@@ -22,7 +22,9 @@ public class MessageInteractor : MonoBehaviour, IInteractable
     {
         gm = GameObject.Find("GameManager").GetComponent<GameManager>();
         mr = GetComponent<MeshRenderer>();
-        mr.enabled = false;
+        if (mr != null) {
+            mr.enabled = false;
+        }
     }
 
     public void Interact() {

@@ -32,9 +32,12 @@ public class EndScene : MonoBehaviour
     [TextArea]
     [SerializeField] private string[] dialogues;
     [SerializeField] private int[] moods;
+    [SerializeField] private Vector3[] angles;
+    [SerializeField] private EndingBG endbg;
     [Space]
     [SerializeField] private AudioClip[] dialogueSounds;
     [SerializeField] private AudioClip hitSound;
+    [SerializeField] private AudioClip[] rankSounds;
     private AudioSource src;
 
     private bool canText = false;
@@ -111,6 +114,7 @@ public class EndScene : MonoBehaviour
         src.pitch = Random.Range(0.97f, 1.03f);
         src.Play();
         spring = 0f;
+        endbg.targetCamAngle = angles[msgID];
 
         if (currentLine != msgID) {currentLine = msgID;}
 
@@ -155,11 +159,11 @@ public class EndScene : MonoBehaviour
 
     private IEnumerator Ending()
     {
-        yield return new WaitForSeconds(.5f);
+        yield return new WaitForSeconds(0.5f);
         bgMode = 2;
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(0.5f);
         fadeText = true;
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(2f);
         src.clip = hitSound;
         src.pitch = 0.4f;
         src.Play();
@@ -191,6 +195,9 @@ public class EndScene : MonoBehaviour
         src.Play();
         yield return new WaitForSeconds(0.9f);
         
+        
+        GameObject.Find("ExtraSound").GetComponent<AudioSource>().clip = rankSounds[finalRank];
+        GameObject.Find("ExtraSound").GetComponent<AudioSource>().Play();
         rank.sprite = imgRanks[finalRank];
         rank.enabled = true;
         src.pitch = 0.5f;
@@ -217,8 +224,12 @@ public class EndScene : MonoBehaviour
         avgDisplay = GameManager.instance.ConvertViews(averageViewCount);
         peakDisplay = GameManager.instance.ConvertViews(peakViewCount);
 
-        if (averageViewCount >= 320) {
+        if (averageViewCount >= 325) {
             dialogues[6] = "I could hardly believe it, I somehow got a whopping <color=#ff7>" + avgDisplay.ToString("#,##0") + "</color> average viewer count! How the hell did I pull that off???";
+            moods[6] = 1;
+            howPleased = 6;
+        } else if (averageViewCount >= 312) {
+            dialogues[6] = "My average view count of this stream hit <color=#ff7>" + avgDisplay.ToString("#,##0") + "</color>! That's a record for me!";
             moods[6] = 1;
             howPleased = 5;
         } else if (averageViewCount >= 300) {
@@ -237,14 +248,21 @@ public class EndScene : MonoBehaviour
             dialogues[6] = "I had like <color=#ff7>" + avgDisplay.ToString("#,##0") + "</color> people watching on average.";
             moods[6] = 2;
             howPleased = 1;
+            angles[7] = new Vector3(-3, 0, -2);
         } else {
             dialogues[6] = "I only managed to get <color=#ff7>" + avgDisplay.ToString("#,##0") + "</color> people watching on average.";
             moods[6] = 3;
+            angles[7] = new Vector3(3, -2, 0);
         }
 
-        if (peakViewCount >= 375) {
+        if (peakViewCount >= 390) {
             dialogues[7] = "...and a peak count of <color=#ff7>" + peakDisplay.ToString("#,##0") + "</color>?!? That's insane!";
             moods[7] = 5;
+            angles[7] = new Vector3(-5, -2, 0);
+            howPleased += 4;
+        } else if (peakViewCount >= 360) {
+            dialogues[7] = "I also peaked at  an impressive <color=#ff7>" + peakDisplay.ToString("#,##0") + "</color> viewers!";
+            moods[7] = 1;
             howPleased += 3;
         } else if (peakViewCount >= 320) {
             dialogues[7] = "I also peaked at <color=#ff7>" + peakDisplay.ToString("#,##0") + "</color> viewers!";
@@ -254,14 +272,17 @@ public class EndScene : MonoBehaviour
             dialogues[7] = "The stream peaked at <color=#ff7>" + peakDisplay.ToString("#,##0") + "</color> viewers.";
             moods[7] = 0;
             howPleased += 1;
+            angles[7] = new Vector3(0, 0, 2);
         } else {
             dialogues[7] = "It also said my view count got up to <color=#ff7>" + peakDisplay.ToString("#,##0") + "</color>. Probably just at the start, though.";
             moods[7] = 2;
+            angles[7] = new Vector3(2, 6, 0);
         }
 
 
         switch (howPleased) {
-            case 8:
+            case 10:
+                angles[4] = new Vector3(-8, 0, 0);
                 SetMessage(4, "God, that went SO GOOD!!!!", 5);
                 SetMessage(8, "Man, I am so good at streaming.", 0);
                 SetMessage(9, "The guys over at <color=#7cf>T-FUEL</color> are lucky they picked someone<br>as good as me to promote their crappy drink.", 0);
@@ -269,12 +290,15 @@ public class EndScene : MonoBehaviour
                 SetMessage(11, "Oh, Nelle. You've truly outdone yourself.", 0);
                 finalRank = 4;
                 break;
+            case 9:
+            case 8:
             case 7:
-            case 6:
                 SetMessage(4, "That was such a good stream!", 1);
-                SetMessage(8, "Great job, Nelle!", 1);
+                SetMessage(9, "I'm really happy with how this went.", 0);
+                SetMessage(9, "I'll let <color=#7cf>T-FUEL</color> know how I did. They should be happy.", 0);
                 finalRank = 3;
                 break;
+            case 6:
             case 5:
             case 4:
                 finalRank = 2;
@@ -289,11 +313,17 @@ public class EndScene : MonoBehaviour
             case 1:
             case 0:
                 SetMessage(4, "...", 6);
+                angles[4] = new Vector3(5, 0, 0);
+                angles[5] = new Vector3(2.5f, 0, 0);
                 SetMessage(8, "Yeah, not my best work.", 3);
                 SetMessage(9, "<color=#7cf>T-FUEL</color>'s still paying me, right?<br>I think that still qualifies as a \"successful\" stream.<br> Not like I died or anything.", 2);
+                angles[8] = new Vector3(1, 0, 0);
+                angles[9] = new Vector3(-2, -3, -4);
                 SetMessage(10, "I think I just gotta cross my fingers and pray they still pay me.", 3);
                 SetMessage(11, "...otherwise, still kinda <color=#f77>screwed</color>.", 4);
                 SetMessage(13, "...there's always next stream, I guess.", 7);
+                angles[12] = new Vector3(2, 0, 0);
+                angles[13] = new Vector3(4, 8, 1);
                 finalRank = 0;
                 break;
             default:
