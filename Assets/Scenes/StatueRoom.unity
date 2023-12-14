@@ -1560,6 +1560,8 @@ MonoBehaviour:
   posX: 3.936
   posY: 2.193606
   posZ: 0.204
+  statueTag: pushStatue_2
+  soundToMake: {fileID: 8300000, guid: cbb2db0109e39144cbe4e30a3802c9c9, type: 3}
 --- !u!1 &307576738
 GameObject:
   m_ObjectHideFlags: 0
@@ -2493,6 +2495,8 @@ MonoBehaviour:
   posX: -4.068
   posY: 2.378
   posZ: 0.136
+  statueTag: pushStatue_1
+  soundToMake: {fileID: 8300000, guid: cbb2db0109e39144cbe4e30a3802c9c9, type: 3}
 --- !u!1001 &527983610
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3610,6 +3614,8 @@ MonoBehaviour:
   posX: -0.025
   posY: 2.193606
   posZ: 3.229
+  statueTag: pushStatue_3
+  soundToMake: {fileID: 8300000, guid: cbb2db0109e39144cbe4e30a3802c9c9, type: 3}
 --- !u!1 &642694354
 GameObject:
   m_ObjectHideFlags: 0
