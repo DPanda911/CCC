@@ -151,8 +151,10 @@ public class GameManager : MonoBehaviour
         Debug.Log("Attempting to log scene: " + sceneName);
         if (visitedRooms.Contains(sceneName))
         {
-            Debug.Log("We've already been here. Boring!");
-            AudienceWoo(-1f, -0.00001f);
+            if ((sceneName != "DeceptiveDoors 1") && (sceneName != "DeceptiveDoors 2") && (sceneName != "DeceptiveDoors 3") && (sceneName != "DeceptiveDoors 4")) {
+                Debug.Log("We've already been here. Boring!");
+                AudienceWoo(-1f, -0.00001f);
+            }
         } else {
             Debug.Log("New Room!!!! Adding " + sceneName + " to the visitedRooms list.");
             visitedRooms.Add(sceneName);
