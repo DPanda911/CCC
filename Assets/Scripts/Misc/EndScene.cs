@@ -331,8 +331,8 @@ public class EndScene : MonoBehaviour
             case 8:
             case 7:
                 SetMessage(4, "That was such a good stream!", 1);
-                SetMessage(9, "I'm really happy with how this went.", 0);
-                SetMessage(9, "I'll let <color=#7cf>T-FUEL</color> know how I did. They should be happy.", 0);
+                SetMessage(8, "I'm really happy with how this went.", 0);
+                SetMessage(9, "I'll let <color=#7cf>T-FUEL</color> know how I did. They should be pleased.", 0);
                 finalRank = 3;
                 break;
             case 6:
