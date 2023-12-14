@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class InventoryManager : MonoBehaviour
 {
@@ -30,6 +31,10 @@ public class InventoryManager : MonoBehaviour
         }
         GameManager.instance.AudienceWoo(0, 0.00075f);
         UpdateUI();
+
+        if (inventoryItems.Count > 5) {
+            SceneManager.LoadScene("TooMuchStuff");
+        }
 
         if (item == AllItems.BatteryPack)
         {

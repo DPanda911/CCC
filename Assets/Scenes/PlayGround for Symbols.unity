@@ -145,11 +145,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6956201757947515252, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6956201757947515252, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.08
+      value: -0.04
       objectReference: {fileID: 0}
     - target: {fileID: 6956201757947515252, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
       propertyPath: m_LocalPosition.y
@@ -157,7 +157,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6956201757947515252, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.34
+      value: -0.03
       objectReference: {fileID: 0}
     - target: {fileID: 6956201757947515252, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
       propertyPath: m_LocalRotation.w
@@ -188,9 +188,13 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6956201757947515272, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
+      propertyPath: mood
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6956201757947515272, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
       propertyPath: message
-      value: Chat I forgot the name of this shape...is it a pentagon? A pentachord?
-        A pentachloronitrobenzene??
+      value: ...I swear I just felt one of these <color=#f77>triangles</color> move
+        under my feet.<br>Maybe I can move them around myself?
       objectReference: {fileID: 0}
     - target: {fileID: 6956201757947515272, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
       propertyPath: repeatTag
@@ -198,26 +202,46 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6956201757947515273, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
       propertyPath: m_Size.x
-      value: 3.6241467
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6956201757947515273, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
       propertyPath: m_Size.z
-      value: 3.7183576
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6956201757947515273, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
       propertyPath: m_Center.x
-      value: 0.023717284
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6956201757947515273, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
       propertyPath: m_Center.z
-      value: 0.030156076
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6956201757947515275, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
       propertyPath: m_Name
       value: Dialogue Cube (7)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6956201757947515273, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
+--- !u!1 &134011194 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6956201757947515275, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
+  m_PrefabInstance: {fileID: 134011193}
+  m_PrefabAsset: {fileID: 0}
+--- !u!136 &134011195
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 134011194}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 0.78
+  m_Height: 6.59
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &148281530
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -372,95 +396,6 @@ MonoBehaviour:
   rotateCorrect: 0
   correctYRotation: 0
   eulerAngY: 0
---- !u!1001 &256619743
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 6956201757947515252, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
-      propertyPath: m_RootOrder
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6956201757947515252, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 2.6806042
-      objectReference: {fileID: 0}
-    - target: {fileID: 6956201757947515252, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.0000001
-      objectReference: {fileID: 0}
-    - target: {fileID: 6956201757947515252, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -6.6682806
-      objectReference: {fileID: 0}
-    - target: {fileID: 6956201757947515252, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6956201757947515252, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6956201757947515252, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6956201757947515252, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6956201757947515252, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6956201757947515252, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6956201757947515252, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6956201757947515272, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
-      propertyPath: message
-      value: The door's locked!? Guess we're stuck chat...Let's go searching!
-      objectReference: {fileID: 0}
-    - target: {fileID: 6956201757947515272, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
-      propertyPath: repeatTag
-      value: DoorLockedCandle
-      objectReference: {fileID: 0}
-    - target: {fileID: 6956201757947515273, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
-      propertyPath: m_Size.x
-      value: 0.5178706
-      objectReference: {fileID: 0}
-    - target: {fileID: 6956201757947515273, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
-      propertyPath: m_Size.y
-      value: 0.84794176
-      objectReference: {fileID: 0}
-    - target: {fileID: 6956201757947515273, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
-      propertyPath: m_Size.z
-      value: 0.39574933
-      objectReference: {fileID: 0}
-    - target: {fileID: 6956201757947515273, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
-      propertyPath: m_Center.x
-      value: -0.20986626
-      objectReference: {fileID: 0}
-    - target: {fileID: 6956201757947515273, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
-      propertyPath: m_Center.y
-      value: -0.07602912
-      objectReference: {fileID: 0}
-    - target: {fileID: 6956201757947515273, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
-      propertyPath: m_Center.z
-      value: -0.30212533
-      objectReference: {fileID: 0}
-    - target: {fileID: 6956201757947515275, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
-      propertyPath: m_Name
-      value: Dialogue Cube
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
 --- !u!1 &279591073
 GameObject:
   m_ObjectHideFlags: 0
@@ -669,7 +604,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 22
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &423194463
 PrefabInstance:
@@ -680,7 +615,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4477113386341377690, guid: aa527c5760eed244384d4ed14f21edf0, type: 3}
       propertyPath: m_RootOrder
-      value: 18
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 4477113386341377690, guid: aa527c5760eed244384d4ed14f21edf0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -745,7 +680,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4131983154695567082, guid: fb45a2a2649fb684c91594db76b0e888, type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4131983154695567082, guid: fb45a2a2649fb684c91594db76b0e888, type: 3}
       propertyPath: m_LocalPosition.x
@@ -795,6 +730,19 @@ PrefabInstance:
       propertyPath: itemType
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 6124319426886705208, guid: fb45a2a2649fb684c91594db76b0e888, type: 3}
+      propertyPath: pickupTag
+      value: PinkCandle
+      objectReference: {fileID: 0}
+    - target: {fileID: 6124319426886705208, guid: fb45a2a2649fb684c91594db76b0e888, type: 3}
+      propertyPath: useMessage
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6124319426886705208, guid: fb45a2a2649fb684c91594db76b0e888, type: 3}
+      propertyPath: pickupMessage
+      value: A <color=#faa>pink candle</color>. Never liked pink growing up, I was
+        more a purple kinda girl.
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fb45a2a2649fb684c91594db76b0e888, type: 3}
 --- !u!65 &483765482
@@ -836,6 +784,83 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 108.706245, y: 99.99999, z: 100.00002}
   m_Center: {x: 0, y: 0, z: -0.0000038146973}
+--- !u!1001 &505488507
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6956201757947515252, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6956201757947515252, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.41001767
+      objectReference: {fileID: 0}
+    - target: {fileID: 6956201757947515252, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.9093672
+      objectReference: {fileID: 0}
+    - target: {fileID: 6956201757947515252, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3.3684
+      objectReference: {fileID: 0}
+    - target: {fileID: 6956201757947515252, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6956201757947515252, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -6.7151
+      objectReference: {fileID: 0}
+    - target: {fileID: 6956201757947515252, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6956201757947515252, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6956201757947515252, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6956201757947515252, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6956201757947515252, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6956201757947515252, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6956201757947515252, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6956201757947515272, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
+      propertyPath: mood
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6956201757947515272, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
+      propertyPath: message
+      value: ...what in the world am I looking at?
+      objectReference: {fileID: 0}
+    - target: {fileID: 6956201757947515272, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
+      propertyPath: repeatTag
+      value: CandleRoomEntrance
+      objectReference: {fileID: 0}
+    - target: {fileID: 6956201757947515275, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
+      propertyPath: m_Name
+      value: Dialogue Cube
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
 --- !u!65 &544713867
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1371,7 +1396,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: cdafda07d49b57a459d99490f4044657, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: cdafda07d49b57a459d99490f4044657, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1830,7 +1855,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 108.706245, y: 99.99999, z: 100}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!1001 &889813903
+--- !u!1001 &892496708
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -1842,74 +1867,16 @@ PrefabInstance:
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6956201757947515252, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -6.86156
+      propertyPath: m_LocalScale.x
+      value: 6.212641
       objectReference: {fileID: 0}
     - target: {fileID: 6956201757947515252, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.0000002
-      objectReference: {fileID: 0}
-    - target: {fileID: 6956201757947515252, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 2.3913026
-      objectReference: {fileID: 0}
-    - target: {fileID: 6956201757947515252, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6956201757947515252, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6956201757947515252, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6956201757947515252, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6956201757947515252, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6956201757947515252, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6956201757947515252, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6956201757947515272, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
-      propertyPath: message
-      value: Who puts a <color=#FFFF00>yellow candle</color> underneath a fallen
-        bookshelf? The decor in this house could seriously use some work...
-      objectReference: {fileID: 0}
-    - target: {fileID: 6956201757947515272, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
-      propertyPath: repeatTag
-      value: YellowCandle
-      objectReference: {fileID: 0}
-    - target: {fileID: 6956201757947515275, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
-      propertyPath: m_Name
-      value: Dialogue Cube (4)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
---- !u!1001 &892496708
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 6956201757947515252, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
-      propertyPath: m_RootOrder
-      value: 7
+      propertyPath: m_LocalScale.z
+      value: 0.4077882
       objectReference: {fileID: 0}
     - target: {fileID: 6956201757947515252, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.09502448
+      value: 0.7945
       objectReference: {fileID: 0}
     - target: {fileID: 6956201757947515252, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1917,7 +1884,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6956201757947515252, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 7.27
+      value: 5.7406
       objectReference: {fileID: 0}
     - target: {fileID: 6956201757947515252, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1949,11 +1916,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6956201757947515272, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
       propertyPath: message
-      value: 'Shapes, shapes and more shapes, I always hated geometry class... '
+      value: That's a lot of shapes on the floor. I always hated geometry class.
       objectReference: {fileID: 0}
     - target: {fileID: 6956201757947515272, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
       propertyPath: repeatTag
-      value: ENTERINGCANDLEROOM
+      value: CandleRoomEntrance
       objectReference: {fileID: 0}
     - target: {fileID: 6956201757947515275, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
       propertyPath: m_Name
@@ -1983,15 +1950,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: ca5823d61022f6545a5bd8ccc84dc8fc, type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ca5823d61022f6545a5bd8ccc84dc8fc, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.321
+      value: 2.306856
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ca5823d61022f6545a5bd8ccc84dc8fc, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -15.455
+      value: 17.244604
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ca5823d61022f6545a5bd8ccc84dc8fc, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1999,19 +1966,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ca5823d61022f6545a5bd8ccc84dc8fc, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.8660254
+      value: -0.0000024959443
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ca5823d61022f6545a5bd8ccc84dc8fc, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: ca5823d61022f6545a5bd8ccc84dc8fc, type: 3}
-      propertyPath: m_LocalRotation.y
       value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ca5823d61022f6545a5bd8ccc84dc8fc, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.0000014752147
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ca5823d61022f6545a5bd8ccc84dc8fc, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0.8660254
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ca5823d61022f6545a5bd8ccc84dc8fc, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2019,11 +1986,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ca5823d61022f6545a5bd8ccc84dc8fc, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 300
+      value: 420
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ca5823d61022f6545a5bd8ccc84dc8fc, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
+      value: -180
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ca5823d61022f6545a5bd8ccc84dc8fc, type: 3}
       propertyPath: m_Name
@@ -2098,7 +2065,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 24
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1022303509
 MonoBehaviour:
@@ -2134,80 +2101,6 @@ MonoBehaviour:
   check: 0
   tag: Candle
   amountOfObj: 5
---- !u!1001 &1034237081
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 6956201757947515252, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
-      propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 6956201757947515252, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -3.7459104
-      objectReference: {fileID: 0}
-    - target: {fileID: 6956201757947515252, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6956201757947515252, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 4.9255495
-      objectReference: {fileID: 0}
-    - target: {fileID: 6956201757947515252, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6956201757947515252, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6956201757947515252, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6956201757947515252, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6956201757947515252, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6956201757947515252, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6956201757947515252, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6956201757947515272, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
-      propertyPath: message
-      value: If I get a $10 donation I'll say ten words that rhyme with <color=#FFC0CB>pink</color>!
-        Drink, Sink, Dink, Link, Stink, Blink...
-      objectReference: {fileID: 0}
-    - target: {fileID: 6956201757947515272, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
-      propertyPath: repeatTag
-      value: PinkCandle
-      objectReference: {fileID: 0}
-    - target: {fileID: 6956201757947515273, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
-      propertyPath: m_Size.x
-      value: 1.42921
-      objectReference: {fileID: 0}
-    - target: {fileID: 6956201757947515273, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
-      propertyPath: m_Center.x
-      value: 0.21460506
-      objectReference: {fileID: 0}
-    - target: {fileID: 6956201757947515275, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
-      propertyPath: m_Name
-      value: Dialogue Cube (5)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
 --- !u!65 &1057500675
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2256,7 +2149,7 @@ Transform:
   - {fileID: 1813873221}
   - {fileID: 1631830435}
   m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1091610835
 GameObject:
@@ -2822,7 +2715,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4131983154695567082, guid: 2dca9d3c2e44d7f4ab401aba0ae0c39f, type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4131983154695567082, guid: 2dca9d3c2e44d7f4ab401aba0ae0c39f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2872,90 +2765,21 @@ PrefabInstance:
       propertyPath: itemType
       value: 8
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 2dca9d3c2e44d7f4ab401aba0ae0c39f, type: 3}
---- !u!1001 &1329904240
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 6956201757947515252, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6956201757947515252, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -1.7325556
-      objectReference: {fileID: 0}
-    - target: {fileID: 6956201757947515252, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6956201757947515252, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -7.423644
-      objectReference: {fileID: 0}
-    - target: {fileID: 6956201757947515252, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6956201757947515252, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6956201757947515252, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6956201757947515252, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6956201757947515252, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6956201757947515252, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6956201757947515252, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6956201757947515272, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
-      propertyPath: message
-      value: Why is there just a random door here? Why is there just a random <color=#AEF359>green
-        candle</color> too? Chat, am I the weird one?
-      objectReference: {fileID: 0}
-    - target: {fileID: 6956201757947515272, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
-      propertyPath: repeatTag
+    - target: {fileID: 6124319426886705208, guid: 2dca9d3c2e44d7f4ab401aba0ae0c39f, type: 3}
+      propertyPath: pickupTag
       value: GreenCandle
       objectReference: {fileID: 0}
-    - target: {fileID: 6956201757947515273, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
-      propertyPath: m_Size.x
-      value: 1.8523844
+    - target: {fileID: 6124319426886705208, guid: 2dca9d3c2e44d7f4ab401aba0ae0c39f, type: 3}
+      propertyPath: useMessage
+      value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 6956201757947515273, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
-      propertyPath: m_Size.z
-      value: 1.290648
-      objectReference: {fileID: 0}
-    - target: {fileID: 6956201757947515273, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
-      propertyPath: m_Center.x
-      value: -0.06088406
-      objectReference: {fileID: 0}
-    - target: {fileID: 6956201757947515273, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
-      propertyPath: m_Center.z
-      value: 0.14532399
-      objectReference: {fileID: 0}
-    - target: {fileID: 6956201757947515275, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
-      propertyPath: m_Name
-      value: Dialogue Cube (6)
+    - target: {fileID: 6124319426886705208, guid: 2dca9d3c2e44d7f4ab401aba0ae0c39f, type: 3}
+      propertyPath: pickupMessage
+      value: Why is there just a random door here? Why is there just a random <color=#7f7>green
+        candle</color> too? Chat, am I the weird one?
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: 2dca9d3c2e44d7f4ab401aba0ae0c39f, type: 3}
 --- !u!1 &1341132464 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5568789175727428425, guid: dc358e91c77a34e42bb0310c5e2ad4cc, type: 3}
@@ -2983,7 +2807,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: dc358e91c77a34e42bb0310c5e2ad4cc, type: 3}
       propertyPath: m_RootOrder
-      value: 15
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: dc358e91c77a34e42bb0310c5e2ad4cc, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3837,7 +3661,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!65 &1521083133
 BoxCollider:
@@ -3887,7 +3711,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4131983154695567082, guid: 27c32a2c9e009ec44bf9e032f02dec8a, type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4131983154695567082, guid: 27c32a2c9e009ec44bf9e032f02dec8a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3936,6 +3760,19 @@ PrefabInstance:
     - target: {fileID: 6124319426886705208, guid: 27c32a2c9e009ec44bf9e032f02dec8a, type: 3}
       propertyPath: itemType
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6124319426886705208, guid: 27c32a2c9e009ec44bf9e032f02dec8a, type: 3}
+      propertyPath: pickupTag
+      value: BlueCandle
+      objectReference: {fileID: 0}
+    - target: {fileID: 6124319426886705208, guid: 27c32a2c9e009ec44bf9e032f02dec8a, type: 3}
+      propertyPath: useMessage
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6124319426886705208, guid: 27c32a2c9e009ec44bf9e032f02dec8a, type: 3}
+      propertyPath: pickupMessage
+      value: Hey the <color=#7af>blue candle</color> is here! Definitely should put
+        it in the only other spot where there's that same blue color...
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 27c32a2c9e009ec44bf9e032f02dec8a, type: 3}
@@ -4004,7 +3841,7 @@ Transform:
   - {fileID: 1091610839}
   - {fileID: 1233110339}
   m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1631830434 stripped
 GameObject:
@@ -4086,7 +3923,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4131983154695567082, guid: cfb376015e95ffe46b563d6c9b11bae7, type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4131983154695567082, guid: cfb376015e95ffe46b563d6c9b11bae7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4136,140 +3973,25 @@ PrefabInstance:
       propertyPath: itemType
       value: 4
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: cfb376015e95ffe46b563d6c9b11bae7, type: 3}
---- !u!1001 &1712464358
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 6956201757947515252, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
-      propertyPath: m_RootOrder
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 6956201757947515252, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 6.378
-      objectReference: {fileID: 0}
-    - target: {fileID: 6956201757947515252, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6956201757947515252, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -6.48
-      objectReference: {fileID: 0}
-    - target: {fileID: 6956201757947515252, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6956201757947515252, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6956201757947515252, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6956201757947515252, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6956201757947515252, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6956201757947515252, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6956201757947515252, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6956201757947515272, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
-      propertyPath: message
-      value: An <color=#F58216>orange candle</color>! See chat, I can totally do
-        this, orange you glad you're watching the stream!
-      objectReference: {fileID: 0}
-    - target: {fileID: 6956201757947515272, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
-      propertyPath: repeatTag
+    - target: {fileID: 6124319426886705208, guid: cfb376015e95ffe46b563d6c9b11bae7, type: 3}
+      propertyPath: pickupTag
       value: OrangeCandle
       objectReference: {fileID: 0}
-    - target: {fileID: 6956201757947515275, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
-      propertyPath: m_Name
-      value: Dialogue Cube (1)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
---- !u!1001 &1732046519
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 6956201757947515252, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
-      propertyPath: m_RootOrder
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 6956201757947515252, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 6.4031014
-      objectReference: {fileID: 0}
-    - target: {fileID: 6956201757947515252, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.06
-      objectReference: {fileID: 0}
-    - target: {fileID: 6956201757947515252, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 5.82
-      objectReference: {fileID: 0}
-    - target: {fileID: 6956201757947515252, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
-      propertyPath: m_LocalRotation.w
+    - target: {fileID: 6124319426886705208, guid: cfb376015e95ffe46b563d6c9b11bae7, type: 3}
+      propertyPath: pickupMood
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 6956201757947515252, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
+    - target: {fileID: 6124319426886705208, guid: cfb376015e95ffe46b563d6c9b11bae7, type: 3}
+      propertyPath: useMessage
+      value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 6956201757947515252, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6956201757947515252, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6956201757947515252, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6956201757947515252, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6956201757947515252, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6956201757947515272, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
-      propertyPath: message
-      value: Hey the <color=#1E90FF>blue candle</color> is here! Definitely should
-        put it in th only other spot where there's that same blue color...
-      objectReference: {fileID: 0}
-    - target: {fileID: 6956201757947515272, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
-      propertyPath: repeatTag
-      value: BlueCandle
-      objectReference: {fileID: 0}
-    - target: {fileID: 6956201757947515275, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
-      propertyPath: m_Name
-      value: Dialogue Cube (3)
+    - target: {fileID: 6124319426886705208, guid: cfb376015e95ffe46b563d6c9b11bae7, type: 3}
+      propertyPath: pickupMessage
+      value: An <color=#fa7>orange candle</color>! See chat, I can totally do this,
+        orange you glad you're watching the stream!
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: cfb376015e95ffe46b563d6c9b11bae7, type: 3}
 --- !u!1 &1754596874 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -2063936825370000755, guid: cdafda07d49b57a459d99490f4044657, type: 3}
@@ -4288,6 +4010,83 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 108.706245, y: 99.99999, z: 100}
   m_Center: {x: 0, y: 0, z: -0.0000038146973}
+--- !u!1001 &1760208089
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1419829764605192533, guid: a923e915a22545b438b4ddac6338512d, type: 3}
+      propertyPath: m_Name
+      value: Interactable Dialogue Cube
+      objectReference: {fileID: 0}
+    - target: {fileID: 6940926572498552538, guid: a923e915a22545b438b4ddac6338512d, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6940926572498552538, guid: a923e915a22545b438b4ddac6338512d, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.0472633
+      objectReference: {fileID: 0}
+    - target: {fileID: 6940926572498552538, guid: a923e915a22545b438b4ddac6338512d, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.8112
+      objectReference: {fileID: 0}
+    - target: {fileID: 6940926572498552538, guid: a923e915a22545b438b4ddac6338512d, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.715
+      objectReference: {fileID: 0}
+    - target: {fileID: 6940926572498552538, guid: a923e915a22545b438b4ddac6338512d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.2927
+      objectReference: {fileID: 0}
+    - target: {fileID: 6940926572498552538, guid: a923e915a22545b438b4ddac6338512d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.9056
+      objectReference: {fileID: 0}
+    - target: {fileID: 6940926572498552538, guid: a923e915a22545b438b4ddac6338512d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -8.0815
+      objectReference: {fileID: 0}
+    - target: {fileID: 6940926572498552538, guid: a923e915a22545b438b4ddac6338512d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6940926572498552538, guid: a923e915a22545b438b4ddac6338512d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6940926572498552538, guid: a923e915a22545b438b4ddac6338512d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6940926572498552538, guid: a923e915a22545b438b4ddac6338512d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6940926572498552538, guid: a923e915a22545b438b4ddac6338512d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6940926572498552538, guid: a923e915a22545b438b4ddac6338512d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6940926572498552538, guid: a923e915a22545b438b4ddac6338512d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7164801062060796452, guid: a923e915a22545b438b4ddac6338512d, type: 3}
+      propertyPath: mood
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7164801062060796452, guid: a923e915a22545b438b4ddac6338512d, type: 3}
+      propertyPath: message.Array.data[0]
+      value: Wait, what?!? I was just- dammit, don't tell me I'm locked in here!
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a923e915a22545b438b4ddac6338512d, type: 3}
 --- !u!65 &1765791728
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4546,6 +4345,83 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 108.706245, y: 99.99999, z: 100.00002}
   m_Center: {x: 0, y: 0, z: -0.0000038146973}
+--- !u!1001 &1890445639
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6956201757947515252, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
+      propertyPath: m_RootOrder
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: 6956201757947515252, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.159994
+      objectReference: {fileID: 0}
+    - target: {fileID: 6956201757947515252, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.32096463
+      objectReference: {fileID: 0}
+    - target: {fileID: 6956201757947515252, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.474
+      objectReference: {fileID: 0}
+    - target: {fileID: 6956201757947515252, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6956201757947515252, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -5.9209
+      objectReference: {fileID: 0}
+    - target: {fileID: 6956201757947515252, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6956201757947515252, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6956201757947515252, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6956201757947515252, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6956201757947515252, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6956201757947515252, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6956201757947515252, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6956201757947515272, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
+      propertyPath: mood
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6956201757947515272, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
+      propertyPath: message
+      value: ...what in the world am I looking at?
+      objectReference: {fileID: 0}
+    - target: {fileID: 6956201757947515272, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
+      propertyPath: repeatTag
+      value: CandleRoomEntrance
+      objectReference: {fileID: 0}
+    - target: {fileID: 6956201757947515275, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
+      propertyPath: m_Name
+      value: Dialogue Cube (3)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
 --- !u!1 &1919097372
 GameObject:
   m_ObjectHideFlags: 0
@@ -4726,6 +4602,83 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 5533f6cc69803074dae7ab1aa4269d27, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8752f0c67b514374c94879cd19eb2be6, type: 3}
+--- !u!1001 &1982492369
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6956201757947515252, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
+      propertyPath: m_RootOrder
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 6956201757947515252, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.41001767
+      objectReference: {fileID: 0}
+    - target: {fileID: 6956201757947515252, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.9093672
+      objectReference: {fileID: 0}
+    - target: {fileID: 6956201757947515252, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.396
+      objectReference: {fileID: 0}
+    - target: {fileID: 6956201757947515252, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6956201757947515252, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -6.7151
+      objectReference: {fileID: 0}
+    - target: {fileID: 6956201757947515252, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6956201757947515252, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6956201757947515252, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6956201757947515252, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6956201757947515252, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6956201757947515252, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6956201757947515252, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6956201757947515272, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
+      propertyPath: mood
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6956201757947515272, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
+      propertyPath: message
+      value: ...what in the world am I looking at?
+      objectReference: {fileID: 0}
+    - target: {fileID: 6956201757947515272, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
+      propertyPath: repeatTag
+      value: CandleRoomEntrance
+      objectReference: {fileID: 0}
+    - target: {fileID: 6956201757947515275, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
+      propertyPath: m_Name
+      value: Dialogue Cube (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4dcbd547868249a48a06371acdcf6dc9, type: 3}
 --- !u!65 &1994069332
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4908,7 +4861,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5487180591593819362, guid: 05f313855de91b343a74caaa85051214, type: 3}
       propertyPath: m_RootOrder
-      value: 17
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 5487180591593819362, guid: 05f313855de91b343a74caaa85051214, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5247,7 +5200,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4131983154695567082, guid: 21f9eca64b2908148a731bf4fae09f44, type: 3}
       propertyPath: m_RootOrder
-      value: 16
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 4131983154695567082, guid: 21f9eca64b2908148a731bf4fae09f44, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5297,6 +5250,23 @@ PrefabInstance:
       propertyPath: itemType
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 6124319426886705208, guid: 21f9eca64b2908148a731bf4fae09f44, type: 3}
+      propertyPath: pickupTag
+      value: YellowCandle
+      objectReference: {fileID: 0}
+    - target: {fileID: 6124319426886705208, guid: 21f9eca64b2908148a731bf4fae09f44, type: 3}
+      propertyPath: pickupMood
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6124319426886705208, guid: 21f9eca64b2908148a731bf4fae09f44, type: 3}
+      propertyPath: useMessage
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6124319426886705208, guid: 21f9eca64b2908148a731bf4fae09f44, type: 3}
+      propertyPath: pickupMessage
+      value: Who puts a <color=#ff7>yellow candle</color> underneath a fallen bookshelf?
+        The decor in this house could seriously use some work...
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 21f9eca64b2908148a731bf4fae09f44, type: 3}
 --- !u!1001 &8870055534625651681
@@ -5312,7 +5282,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8870055535016549514, guid: 0e1e117b9630983408bacd656f226fd2, type: 3}
       propertyPath: m_RootOrder
-      value: 23
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 8870055535016549514, guid: 0e1e117b9630983408bacd656f226fd2, type: 3}
       propertyPath: m_LocalPosition.x
