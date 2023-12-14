@@ -65,6 +65,11 @@ public class LeverScript : MonoBehaviour, IInteractable
         if (door)
         {
             door.GetComponent<Animator>().Play("MRDoor_Open");
+            if (linkedLever != null)
+            {
+                door.GetComponent<AudioSource>().pitch = Random.Range(0.97f, 1.03f);
+                door.GetComponent<AudioSource>().Play();
+            }
         }
 
         gm.NewMiscTag(leverTag);
