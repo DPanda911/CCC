@@ -981,6 +981,10 @@ PrefabInstance:
       value: -6.6679993
       objectReference: {fileID: 0}
     - target: {fileID: 8870055535016549519, guid: 0e1e117b9630983408bacd656f226fd2, type: 3}
+      propertyPath: itemTag
+      value: DamnIForgotToGiveThisATag
+      objectReference: {fileID: 0}
+    - target: {fileID: 8870055535016549519, guid: 0e1e117b9630983408bacd656f226fd2, type: 3}
       propertyPath: useMessage
       value: 0
       objectReference: {fileID: 0}
