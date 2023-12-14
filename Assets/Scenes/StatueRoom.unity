@@ -1557,6 +1557,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   statueRight: 0
+  posX: 3.936
+  posY: 2.193606
+  posZ: 0.204
 --- !u!1 &307576738
 GameObject:
   m_ObjectHideFlags: 0
@@ -2487,6 +2490,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   statueRight: 0
+  posX: -4.068
+  posY: 2.378
+  posZ: 0.136
 --- !u!1001 &527983610
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3601,6 +3607,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   statueRight: 0
+  posX: -0.025
+  posY: 2.193606
+  posZ: 3.229
 --- !u!1 &642694354
 GameObject:
   m_ObjectHideFlags: 0

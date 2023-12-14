@@ -6,12 +6,15 @@ public class StatueCheck : MonoBehaviour
 {
     // Start is called before the first frame update
     public bool statueRight = false;
-
+    public float posX;
+    public float posY;
+    public float posZ;
     Rigidbody rb;
 
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        
     }
 
     // Update is called once per frame
@@ -26,6 +29,7 @@ public class StatueCheck : MonoBehaviour
         if (other.gameObject.tag == "Void")
         {
             statueRight = true;
+            transform.position = new Vector3(posX, posY, posZ);
             rb.constraints = RigidbodyConstraints.FreezeAll;
         }
     }
